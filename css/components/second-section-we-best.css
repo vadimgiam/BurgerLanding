@@ -1,0 +1,21 @@
+.we-best {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  background-color: #f6f0ec;
+  background-image: url(../../img/bg2.jpg); }
+
+.we-best__title {
+  font-family: Gagalin, Arial, sans-serif;
+  color: #303335;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
