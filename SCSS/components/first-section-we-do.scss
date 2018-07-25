@@ -1,0 +1,211 @@
+$colorWhite:white;
+$colorOrange:#f9b43b;
+$colorBlack:#2f3234;
+$colorRed:#e35028;
+/*mixins*/
+
+@mixin header-nav-font {
+    text-decoration: none;
+    font-family: Ubuntu, Arial, sans-serif;
+    color: $colorWhite;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+@mixin container {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: block;
+}
+
+@mixin btn {
+    background-color: $colorRed;
+    border: none;
+    border-radius: 2px;
+    color: $colorWhite;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 17px;
+    &:hover {
+        background-color: #c1401e;
+    }
+}
+
+@mixin fontOrangeGagalin {
+    
+    font-family: Gagalin, Arial, sans-serif;
+    color: $colorOrange;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 85px;
+}
+@mixin fontWhiteLifehack {
+    
+    font-family: Lifehack, Arial, sans-serif;
+    color: $colorWhite;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 60px;
+}
+/*mixins close*/
+
+.container {
+    @include container;
+}
+
+.we-do {
+    background-color: #111114;
+    background-image: url(../../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+}
+
+.header__nav--link {
+    @include header-nav-font;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header__nav--btn {
+    @include btn;
+    @include header-nav-font;
+}
+.we-do__text--first {
+    @include fontOrangeGagalin;
+}
+.we-do__text--second {
+    @include fontWhiteLifehack;
+}
+.header__nav--list/*,
+ .breadcrumbs__list*/ {
+    list-style: none;
+}
+
+/*Декорирование breadcrumbs*/
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  
+.breadcrumbs__label{
+    cursor: pointer;
+    position: relative;
+}
+.breadcrumbs__label input[type="radio"]+.breadcrumbs__indicator {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .breadcrumbs__label input[type="radio"]:checked+.breadcrumbs__indicator::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  .breadcrumbs__label input[type="radio"]:hover+.breadcrumbs__indicator::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+.breadcrumbs__item {
+    margin-bottom: 3px;
+    color: transparent;
+}
+/*Декорирование Breadcrumbs close*/
+
+.we-do__next-step--link {
+    display: block;
+    background-image: url(../../img/icons/arrow-scroll.svg);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+    height: 16px;
+}
+
+/*Сетки*/
+.header {
+    display: flex;
+}
+.header__nav--list{
+    display: flex;
+}
+.header__nav{
+    margin-left: 29px;
+    padding-top: 19px;
+}
+.header__nav--item{
+    margin-right: 38px;
+    position: relative;
+    &:last-child {
+        margin-right: 0;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: $colorWhite;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        top: 13px;
+    left: -19px;
+    }
+    &:first-child::before{
+        display: none;
+    }
+}
+.header__nav--btn-wrap {
+    margin-left: 22px;
+    padding-top: 34px;
+}
+.we-do__content {
+    display: flex;
+}
+.we-do__text {
+    margin-left: 112px;
+    padding-top: 90px;
+}
+.we-do__text--first {
+    margin-bottom: 21px;
+    display: block;
+}
+.breadcrumbs {
+    position: absolute;
+    top: 80px;
+    right: 223px;
+}
+.we-do__next-step {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+/*Сетки close*/
