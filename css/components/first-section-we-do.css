@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*mixins*/
 /*mixins close*/
+body {
+  min-width: 960px; }
+
 .container {
   margin: 0;
   padding: 0;
@@ -16,6 +19,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 650px;
+  height: 100vh;
   width: 100%; }
 
 .header__nav--link {
@@ -171,7 +175,7 @@
   display: block; }
 
 .breadcrumbs {
-  position: absolute;
+  position: fixed;
   top: 80px;
   right: 223px; }
 

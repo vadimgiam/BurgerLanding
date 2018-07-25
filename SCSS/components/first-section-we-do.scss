@@ -21,6 +21,7 @@ $colorRed:#e35028;
     margin: 0 auto;
     padding: 0 10px;
     display: block;
+    
 }
 
 @mixin btn {
@@ -56,7 +57,9 @@ $colorRed:#e35028;
     line-height: 60px;
 }
 /*mixins close*/
-
+body {
+    min-width: 960px;
+}
 .container {
     @include container;
 }
@@ -68,6 +71,7 @@ $colorRed:#e35028;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 650px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -199,7 +203,7 @@ $colorRed:#e35028;
     display: block;
 }
 .breadcrumbs {
-    position: absolute;
+    position: fixed;
     top: 80px;
     right: 223px;
 }
