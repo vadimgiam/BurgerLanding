@@ -1,0 +1,68 @@
+$colorWhite:white;
+$colorOrange:#f9b43b;
+$colorBlack:#2f3234;
+$colorRed:#e35028;
+/*mixins*/
+
+@mixin fontUbuntu {
+    text-decoration: none;
+    font-family: Ubuntu, Arial, sans-serif;
+    color: $colorWhite;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    
+}
+
+@mixin container {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: block;
+    
+}
+
+@mixin btn {
+    background-color: $colorRed;
+    border: none;
+    border-radius: 2px;
+    color: $colorWhite;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    padding-left: 19%;
+    padding-right: 14%;
+    &:hover {
+        background-color: #c1401e;
+    }
+}
+
+@mixin fontOrangeGagalin {
+    
+    font-family: Gagalin, Arial, sans-serif;
+    color: $colorOrange;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 85px;
+}
+@mixin fontWhiteLifehack {
+    
+    font-family: Lifehack, Arial, sans-serif;
+    color: $colorWhite;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 60px;
+}
+@mixin backgroundImage {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 650px;
+    
+    width: 100%;
+}
+/*mixins close*/

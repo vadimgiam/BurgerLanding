@@ -1,3 +1,5 @@
+
+
 $colorWhite:white;
 $colorOrange:#f9b43b;
 $colorBlack:#2f3234;
@@ -11,7 +13,6 @@ $colorRed:#e35028;
     font-size: 13px;
     font-weight: 300;
     line-height: 30px;
-    
 }
 
 @mixin container {
@@ -21,7 +22,6 @@ $colorRed:#e35028;
     margin: 0 auto;
     padding: 0 10px;
     display: block;
-    
 }
 
 @mixin btn {
@@ -41,34 +41,35 @@ $colorRed:#e35028;
 }
 
 @mixin fontOrangeGagalin {
-    
     font-family: Gagalin, Arial, sans-serif;
     color: $colorOrange;
     font-size: 72px;
     font-weight: 400;
     line-height: 85px;
 }
+
 @mixin fontWhiteLifehack {
-    
     font-family: Lifehack, Arial, sans-serif;
     color: $colorWhite;
     font-size: 65px;
     font-weight: 500;
     line-height: 60px;
 }
+
 @mixin backgroundImage {
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 650px;
-    
     width: 100%;
 }
+
 /*mixins close*/
+
 body {
     min-width: 960px;
 }
+
 .container {
     @include container;
 }
@@ -93,30 +94,38 @@ body {
     @include fontUbuntu;
     text-transform: uppercase;
 }
+
 .we-do__text--first {
     @include fontOrangeGagalin;
 }
+
 .we-do__text--second {
     @include fontWhiteLifehack;
 }
-.header__nav--list/*,
- .breadcrumbs__list*/ {
+
+.header__nav--list
+/*,
+ .breadcrumbs__list*/
+
+    {
     list-style: none;
 }
 
 /*Декорирование breadcrumbs*/
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-  }
-  
-.breadcrumbs__label{
+}
+
+.breadcrumbs__label {
     cursor: pointer;
     position: relative;
 }
+
 .breadcrumbs__label input[type="radio"]+.breadcrumbs__indicator {
     position: absolute;
     top: 4px;
@@ -125,8 +134,9 @@ body {
     height: 6px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 1);
-  }
-  .breadcrumbs__label input[type="radio"]:checked+.breadcrumbs__indicator::before {
+}
+
+.breadcrumbs__label input[type="radio"]:checked+.breadcrumbs__indicator::before {
     content: "";
     position: absolute;
     top: -6px;
@@ -135,8 +145,9 @@ body {
     height: 16px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 1);
-  }
-  .breadcrumbs__label input[type="radio"]:hover+.breadcrumbs__indicator::before {
+}
+
+.breadcrumbs__label input[type="radio"]:hover+.breadcrumbs__indicator::before {
     content: "";
     position: absolute;
     top: -6px;
@@ -145,17 +156,18 @@ body {
     height: 16px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 1);
-  }
+}
+
 .breadcrumbs__item {
     margin-bottom: 3px;
     color: transparent;
 }
+
 /*Декорирование Breadcrumbs close*/
 
 .we-do__next-step--link {
     display: block;
     background-image: url(../../img/icons/arrow-scroll.svg);
-    
     background-repeat: no-repeat;
     background-position: center center;
     width: 30px;
@@ -163,23 +175,26 @@ body {
 }
 
 /*Сетки*/
+
 .header {
     display: flex;
 }
-.header__nav--list{
+
+.header__nav--list {
     display: flex;
 }
-.header__nav{
+
+.header__nav {
     margin-left: 3.1%;
     padding-top: 2%;
 }
-.header__nav--item{
-    
+
+.header__nav--item {
     position: relative;
     &:last-child {
         margin-right: 0;
     }
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         background-color: $colorWhite;
@@ -187,36 +202,43 @@ body {
         height: 4px;
         border-radius: 50%;
         top: 13px;
-    left: -19px;
+        left: -19px;
     }
-    &:first-child::before{
+    &:first-child::before {
         display: none;
     }
 }
+
 /*.header__nav--btn-wrap {
     margin-left: 22px;
     padding-top: 34px;
 }*/
+
 .we-do__content {
     display: flex;
 }
+
 .we-do__text {
     margin-left: 12%;
     padding-top: 9.5%;
 }
+
 .we-do__text--first {
     margin-bottom: 5%;
     display: block;
 }
+
 .breadcrumbs {
     position: fixed;
     top: 14%;
     right: 15.5%;
+    z-index: 50;
 }
+
 .we-do__next-step {
     display: flex;
     justify-content: center;
     margin-top: 14%;
 }
-/*Сетки close*/
 
+/*Сетки close*/

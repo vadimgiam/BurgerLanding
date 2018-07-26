@@ -1,4 +1,5 @@
+@import url(../css/layout/mixinsandvars.css);
 @import url(../css/components/first-section-we-do.css);
 @import url(../css/components/second-section-we-best.css);
 @import url(../css/components/third-section-reviews.css);
-@import url(../css/layout/fonts.scss);
+@import url(../css/layout/fonts.css);
