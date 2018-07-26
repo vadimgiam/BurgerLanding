@@ -4,14 +4,14 @@ $colorBlack:#2f3234;
 $colorRed:#e35028;
 /*mixins*/
 
-@mixin header-nav-font {
+@mixin fontUbuntu {
     text-decoration: none;
     font-family: Ubuntu, Arial, sans-serif;
     color: $colorWhite;
     font-size: 13px;
     font-weight: 300;
     line-height: 30px;
-    text-transform: uppercase;
+    
 }
 
 @mixin container {
@@ -31,10 +31,10 @@ $colorRed:#e35028;
     color: $colorWhite;
     text-transform: uppercase;
     cursor: pointer;
-    padding-top: 1px;
-    padding-bottom: 2px;
-    padding-left: 15px;
-    padding-right: 17px;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    padding-left: 19%;
+    padding-right: 14%;
     &:hover {
         background-color: #c1401e;
     }
@@ -77,12 +77,12 @@ body {
     @include backgroundImage;
     background-color: #111114;
     background-image: url(../../img/bg1.jpg);
-    
+    margin-bottom: -48px;
 }
 
 .header__nav--link {
-    @include header-nav-font;
-    
+    @include fontUbuntu;
+    text-transform: uppercase;
     &:hover {
         text-decoration: underline;
     }
@@ -90,7 +90,8 @@ body {
 
 .header__nav--btn {
     @include btn;
-    @include header-nav-font;
+    @include fontUbuntu;
+    text-transform: uppercase;
 }
 .we-do__text--first {
     @include fontOrangeGagalin;
@@ -169,11 +170,11 @@ body {
     display: flex;
 }
 .header__nav{
-    margin-left: 29px;
-    padding-top: 19px;
+    margin-left: 3.1%;
+    padding-top: 2%;
 }
 .header__nav--item{
-    margin-right: 38px;
+    
     position: relative;
     &:last-child {
         margin-right: 0;
@@ -192,30 +193,30 @@ body {
         display: none;
     }
 }
-.header__nav--btn-wrap {
+/*.header__nav--btn-wrap {
     margin-left: 22px;
     padding-top: 34px;
-}
+}*/
 .we-do__content {
     display: flex;
 }
 .we-do__text {
-    margin-left: 112px;
-    padding-top: 90px;
+    margin-left: 12%;
+    padding-top: 9.5%;
 }
 .we-do__text--first {
-    margin-bottom: 21px;
+    margin-bottom: 5%;
     display: block;
 }
 .breadcrumbs {
     position: fixed;
-    top: 80px;
-    right: 223px;
+    top: 14%;
+    right: 15.5%;
 }
 .we-do__next-step {
     display: flex;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 14%;
 }
 /*Сетки close*/
 

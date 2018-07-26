@@ -13,4 +13,59 @@
     line-height: 64px;
     display: flex;
     justify-content: center;
+ padding-top: 13%;
+    margin-bottom: 4%;
+}
+.advantages{
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: space-between;
+}
+.advantages__item{
+    width: 289px;
+    height: 259px;
+}
+.advantages__title{
+    @include fontWhiteLifehack;
+    font-size: 24px;
+    line-height: 28px;
+    color: $colorBlack;
+    text-align: center;
+}
+.advantages__text {
+    @include fontUbuntu;
+    font-size: 14px;
+    line-height: 24px;
+    color: $colorBlack;
+    text-align: center;
+}
+.advantages__img{
+    margin-bottom: 11%;
+    &--meat{
+        background-image: url(../../img/icons/meat.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:100px;
+        height: 90px;
+        margin-left: 36%;
+    }
+    &--hand{
+        background-image: url(../../img/icons/hand.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:70px;
+        height: 85px;
+        margin-left: 39%;
+    }
+    &--sheet{
+        background-image: url(../../img/icons/natural.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:87px;
+        height: 76px;
+        margin-left: 34%;
+    }
+    
 }
