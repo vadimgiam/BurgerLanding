@@ -36,7 +36,7 @@ body {
 .header__nav--btn {
   background-color: #e35028;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
@@ -129,7 +129,8 @@ body {
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: -5%; }
 
 .header__nav--list {
   display: -webkit-box;
@@ -165,9 +166,12 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+.we-do__img {
+  margin-left: 4%; }
+
 .we-do__text {
-  margin-left: 12%;
-  padding-top: 9.5%; }
+  margin-left: 3%;
+  padding-top: 14.5%; }
 
 .we-do__text--first {
   margin-bottom: 5%;
@@ -186,7 +190,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 14%; }
+  margin-top: 8%; }
 
 /*Сетки close*/
 .reviews {
@@ -245,7 +249,7 @@ body {
 .reviews__hover--btn {
   background-color: #e35028;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   color: white;
   text-transform: uppercase;
   cursor: pointer;

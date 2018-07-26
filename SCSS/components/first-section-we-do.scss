@@ -27,7 +27,7 @@ $colorRed:#e35028;
 @mixin btn {
     background-color: $colorRed;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     color: $colorWhite;
     text-transform: uppercase;
     cursor: pointer;
@@ -178,6 +178,7 @@ body {
 
 .header {
     display: flex;
+    margin-bottom: -5%;
 }
 
 .header__nav--list {
@@ -217,10 +218,12 @@ body {
 .we-do__content {
     display: flex;
 }
-
+.we-do__img {
+    margin-left: 4%;
+}
 .we-do__text {
-    margin-left: 12%;
-    padding-top: 9.5%;
+    margin-left: 3%;
+    padding-top: 14.5%;
 }
 
 .we-do__text--first {
@@ -238,7 +241,7 @@ body {
 .we-do__next-step {
     display: flex;
     justify-content: center;
-    margin-top: 14%;
+    margin-top: 8%;
 }
 
 /*Сетки close*/
