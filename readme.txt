@@ -3,5 +3,5 @@
 
 Курс: "Веб для начинающих" LoftSchool
 
-https://vadimgiam.github.io/BurgerLanding/
+Демо: https://vadimgiam.github.io/BurgerLanding/
 
