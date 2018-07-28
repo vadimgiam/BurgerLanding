@@ -1,12 +1,4 @@
-@import "first-section-we-do.scss";
 
-@mixin bgImageReview {
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 25%;
-    height: 50%;
-    z-index: 7;
-}
 
 .reviews {
     min-height: 650px;

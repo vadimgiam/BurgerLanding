@@ -1,72 +1,5 @@
 
 
-$colorWhite:white;
-$colorOrange:#f9b43b;
-$colorBlack:#2f3234;
-$colorRed:#e35028;
-/*mixins*/
-
-@mixin fontUbuntu {
-    text-decoration: none;
-    font-family: Ubuntu, Arial, sans-serif;
-    color: $colorWhite;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 30px;
-}
-
-@mixin container {
-    margin: 0;
-    padding: 0;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    display: block;
-    position: relative;
-}
-
-@mixin btn {
-    background-color: $colorRed;
-    border: none;
-    border-radius: 4px;
-    color: $colorWhite;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding-top: 1%;
-    padding-bottom: 4%;
-    padding-left: 19%;
-    padding-right: 14%;
-    &:hover {
-        background-color: #c1401e;
-    }
-}
-
-@mixin fontOrangeGagalin {
-    font-family: Gagalin, Arial, sans-serif;
-    color: $colorOrange;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 85px;
-}
-
-@mixin fontWhiteLifehack {
-    font-family: Lifehack, Arial, sans-serif;
-    color: $colorWhite;
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 60px;
-}
-
-@mixin backgroundImage {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 650px;
-    width: 100%;
-}
-
-/*mixins close*/
-
 body {
     min-width: 960px;
 }
@@ -84,7 +17,7 @@ position: relative;
 .we-do {
     @include backgroundImage;
     background-color: #111114;
-    background-image: url(../../img/bg1.jpg);
+    background-image: url(../img/bg1.jpg);
     margin-bottom: -48px;
 }
 
@@ -174,7 +107,7 @@ position: relative;
 
 .we-do__next-step--link {
     display: block;
-    background-image: url(../../img/icons/arrow-scroll.svg);
+    background-image: url(../img/icons/arrow-scroll.svg);
     background-repeat: no-repeat;
     background-position: center center;
     width: 30px;
@@ -199,6 +132,7 @@ position: relative;
 
 .header__nav--item {
     position: relative;
+    margin-right: 38px;
     &:last-child {
         margin-right: 0;
     }
@@ -217,10 +151,10 @@ position: relative;
     }
 }
 
-/*.header__nav--btn-wrap {
+.header__nav--btn-wrap {
     margin-left: 22px;
     padding-top: 34px;
-}*/
+}
 
 .we-do__content {
     display: flex;

@@ -11,7 +11,6 @@ $colorRed:#e35028;
     font-size: 13px;
     font-weight: 300;
     line-height: 30px;
-    
 }
 
 @mixin container {
@@ -21,48 +20,53 @@ $colorRed:#e35028;
     margin: 0 auto;
     padding: 0 10px;
     display: block;
-    
+    position: relative;
 }
 
 @mixin btn {
     background-color: $colorRed;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     color: $colorWhite;
     text-transform: uppercase;
     cursor: pointer;
     padding-top: 1%;
     padding-bottom: 4%;
     padding-left: 19%;
-    padding-right: 14%;
+    padding-right: 16%;
     &:hover {
         background-color: #c1401e;
     }
 }
 
 @mixin fontOrangeGagalin {
-    
     font-family: Gagalin, Arial, sans-serif;
     color: $colorOrange;
     font-size: 72px;
     font-weight: 400;
     line-height: 85px;
 }
+
 @mixin fontWhiteLifehack {
-    
     font-family: Lifehack, Arial, sans-serif;
     color: $colorWhite;
     font-size: 65px;
     font-weight: 500;
     line-height: 60px;
 }
+
 @mixin backgroundImage {
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 650px;
-    
     width: 100%;
+}
+@mixin bgImageReview {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 25%;
+    height: 50%;
+    z-index: 7;
 }
 /*mixins close*/
