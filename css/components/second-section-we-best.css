@@ -4,13 +4,20 @@
 body {
   min-width: 960px; }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+
 .container {
   margin: 0;
   padding: 0;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  display: block; }
+  display: block;
+  position: relative; }
 
 .we-do {
   background-size: cover;
@@ -219,7 +226,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 13%;
-  margin-bottom: 4%; }
+  margin-bottom: 6%; }
 
 .advantages {
   list-style: none;
@@ -233,8 +240,19 @@ body {
   justify-content: space-between; }
 
 .advantages__item {
-  width: 289px;
-  height: 259px; }
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .advantages__title {
   font-family: Lifehack, Arial, sans-serif;
@@ -245,7 +263,8 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #2f3234;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
 
 .advantages__text {
   text-decoration: none;
@@ -260,25 +279,18 @@ body {
   text-align: center; }
 
 .advantages__img {
-  margin-bottom: 11%; }
+  margin-bottom: 2%;
+  background-repeat: no-repeat;
+  background-position: center center; }
   .advantages__img--meat {
-    background-image: url(../../img/icons/meat.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    /* background-image: url(../../img/icons/meat.svg);*/
     width: 100px;
-    height: 90px;
-    margin-left: 36%; }
+    height: 90px; }
   .advantages__img--hand {
-    background-image: url(../../img/icons/hand.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    /*background-image: url(../../img/icons/hand.svg);*/
     width: 70px;
-    height: 85px;
-    margin-left: 39%; }
+    height: 85px; }
   .advantages__img--sheet {
-    background-image: url(../../img/icons/natural.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    /*background-image: url(../../img/icons/natural.svg);*/
     width: 87px;
-    height: 76px;
-    margin-left: 34%; }
+    height: 76px; }

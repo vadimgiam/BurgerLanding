@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
  padding-top: 13%;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
 }
 .advantages{
     list-style: none;
@@ -25,8 +25,10 @@
     justify-content: space-between;
 }
 .advantages__item{
-    width: 289px;
-    height: 259px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .advantages__title{
     @include fontWhiteLifehack;
@@ -34,6 +36,7 @@
     line-height: 28px;
     color: $colorBlack;
     text-align: center;
+    margin-bottom: 0;
 }
 .advantages__text {
     @include fontUbuntu;
@@ -43,30 +46,30 @@
     text-align: center;
 }
 .advantages__img{
-    margin-bottom: 11%;
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
     &--meat{
-        background-image: url(../../img/icons/meat.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
+       /* background-image: url(../../img/icons/meat.svg);*/
+        
         width:100px;
         height: 90px;
-        margin-left: 36%;
+        
     }
     &--hand{
-        background-image: url(../../img/icons/hand.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
+        /*background-image: url(../../img/icons/hand.svg);*/
+        
         width:70px;
         height: 85px;
-        margin-left: 39%;
+        
     }
     &--sheet{
-        background-image: url(../../img/icons/natural.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
+        /*background-image: url(../../img/icons/natural.svg);*/
+        
         width:87px;
         height: 76px;
-        margin-left: 34%;
+       
     }
     
 }

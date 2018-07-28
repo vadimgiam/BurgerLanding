@@ -22,6 +22,7 @@ $colorRed:#e35028;
     margin: 0 auto;
     padding: 0 10px;
     display: block;
+    position: relative;
 }
 
 @mixin btn {
@@ -69,7 +70,13 @@ $colorRed:#e35028;
 body {
     min-width: 960px;
 }
-
+.wrapper{
+position: relative;
+  width: 100%;
+  
+  min-height: 100%;
+  overflow: hidden;
+}
 .container {
     @include container;
 }
