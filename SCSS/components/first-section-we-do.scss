@@ -33,6 +33,10 @@ position: relative;
     @include btn;
     @include fontUbuntu;
     text-transform: uppercase;
+    padding-left: 16%;
+    padding-right: 16%;
+    display: block;
+    text-align: center;
 }
 
 .we-do__text--first {
@@ -52,13 +56,8 @@ position: relative;
 }
 
 /*Декорирование breadcrumbs*/
-
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+.breadcrumbs__btn{
+@include visuallyHidden ;
 }
 
 .breadcrumbs__label {
@@ -164,7 +163,7 @@ position: relative;
 }
 .we-do__text {
     margin-left: 3%;
-    padding-top: 11%;
+    padding-top: 14%;
 }
 
 .we-do__text--first {

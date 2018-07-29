@@ -45,9 +45,9 @@
                         </ul>
                     </nav>
                     <div class="header__nav--btn-wrap">
-                        <button type="button" class="header__nav--btn">
+                        <a href="#" class="header__nav--btn">
                             Заказать
-                        </button>
+                        </a>
                     </div>
 
                 </header>
@@ -57,8 +57,11 @@
                         <img src="img/burgerfirst.png" alt="burger" class="we-do__img">
                     </p>
                     <div class="we-do__text">
-                        <h1 class="we-do__text--first">МЫ ДЕЛАЕМ</h1>
-                        <span class="we-do__text--second">натуральные бургеры</span>
+                        <h1 class="we-do__text--title">
+                            <span class="we-do__text--first">МЫ ДЕЛАЕМ</span>
+                            <span class="we-do__text--second">натуральные бургеры</span>
+                        </h1>
+
                     </div>
                 </div>
                 <div class="we-do__next-step">
@@ -74,7 +77,10 @@
                 <ul class="advantages">
                     <li class="advantages__item">
                         <div class="advantages__img advantages__img--meat">
-                            <img src="img/icons/meat.svg" alt="мясо">
+                            <!--<img src="img/icons/meat.svg" alt="мясо">-->
+                            <svg>
+                                <use xlink:href="img/sprite.svg#beef"></use>
+                            </svg>
                         </div>
                         <h2 class="advantages__title">100% свежее мясо</h2>
                         <p class="advantages__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
@@ -99,7 +105,7 @@
         </section>
 
         <section class="reviews">
-            <h1 class="visually-hidden">Отзывы клиентов</h1>
+            <h1 class="reviews__title">Отзывы клиентов</h1>
             <ul class="reviews__list">
                 <li class="reviews__item reviews__item--photo1">
                     <img src="img/foto1.jpg" alt="фото клиента" class="reviews__img">
@@ -204,8 +210,6 @@
                                 </div>
                                 <input type="text" class="form__input">
                             </label>
-                        </div>
-                        <div class="form__row">
                             <label class="form__block">
                                 <div class="form__block-title">
                                     Телефон
@@ -213,42 +217,45 @@
                                 <input type="text" class="form__input">
                             </label>
                         </div>
-                    </div>
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__block-title">
-                                Улица
+                        <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">
+                                        Улица
+                                    </div>
+                                    <input type="text" class="form__input">
+                                </label>
                             </div>
-                            <input type="text" class="form__input">
-                        </label>
-                    </div>
+        
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">
+                                        Дом
+                                    </div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">
+                                        Корпус
+                                    </div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">
+                                        Квартира
+                                    </div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">
+                                        Этаж
+                                    </div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
 
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__block-title">
-                                Дом
-                            </div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__block-title">
-                                Корпус
-                            </div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__block-title">
-                                Квартира
-                            </div>
-                            <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__block-title">
-                                Этаж
-                            </div>
-                            <input type="text" class="form__input">
-                        </label>
+
                     </div>
+                    
                     <div class="form__right">
                         <div class="form__row">
                             <label class="form__block">
@@ -263,43 +270,44 @@
                             <ul class="form__radio-list">
                                 <li class="form__radio-item">
 
-                                    <div class="form__block-title">
-                                        Потребуется сдача
-                                    </div>
-                                    <label class="form__block" for="label1">
-                                        <input aria-label="Потребуется сдача" type="radio" id="label1" name="check" class="form__radio">
+                                    
+                                    <label class="form__block" for="labelcheck1">
+                                        <input aria-label="Потребуется сдача" type="radio" id="labelcheck1" name="check" class="form__radio">
                                         <span class="radio-indicator"></span>
                                     </label>
-
+                                    <div class="form__block-title">
+                                            Потребуется сдача
+                                        </div>
                                 </li>
                                 <li class="form__radio-item">
 
-                                    <div class="form__block-title">
-                                        Оплата по карте
-                                    </div>
-                                    <label class="form__block" for="label1">
-                                        <input aria-label="Оплата по карте" type="radio" id="label2" name="check" class="form__radio" checked>
+                                    
+                                    <label class="form__block" for="labelcheck">
+                                        <input aria-label="Оплата по карте" type="radio" id="labelcheck" name="check" class="form__radio" checked>
                                         <span class="radio-indicator"></span>
                                     </label>
-
+                                    <div class="form__block-title">
+                                            Оплата по карте
+                                        </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="form__row">
-                            <div class="form__block-title">
-                                Не перезванивать
-                            </div>
-                            <label class="form__block" for="label3">
-                                <input aria-label="Не перезванивать" type="checkbox" id="label3" name="check" class="form__checkbox" checked>
+                            
+                            <label class="form__block" for="labelphone">
+                                <input aria-label="Не перезванивать" type="checkbox" id="labelphone" name="check" class="form__checkbox" checked>
                                 <span class="checkbox-indicator"></span>
                             </label>
+                            <div class="form__block-title">
+                                    Не перезванивать
+                                </div>
                         </div>
 
                         <div class="form__row">
                             <button type="button" class="form__submit">
                                 Заказать
                             </button>
-                            <button type="reset" class="form__submit">
+                            <button type="reset" class="form__reset">
                                 Очистить
                             </button>
                         </div>

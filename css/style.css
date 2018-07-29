@@ -57,7 +57,11 @@ body {
   font-size: 13px;
   font-weight: 300;
   line-height: 30px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-left: 16%;
+  padding-right: 16%;
+  display: block;
+  text-align: center; }
   .header__nav--btn:hover {
     background-color: #c1401e; }
 
@@ -79,7 +83,7 @@ body {
   list-style: none; }
 
 /*Декорирование breadcrumbs*/
-.visually-hidden {
+.breadcrumbs__btn {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -179,7 +183,7 @@ body {
 
 .we-do__text {
   margin-left: 3%;
-  padding-top: 11%; }
+  padding-top: 14%; }
 
 .we-do__text--first {
   margin-bottom: 5%;
@@ -298,7 +302,15 @@ body {
 
 .reviews {
   min-height: 650px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: -3.5%; }
+
+.reviews__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
 
 .reviews__list {
   margin: 0;
@@ -396,6 +408,123 @@ body {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
+.order__title {
+  font-family: Gagalin, Arial, sans-serif;
+  color: #f9b43b;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 85px;
+  line-height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.form__block-title, .form__reset {
+  text-decoration: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px; }
+
+.order {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  background-color: #2f3234;
+  background-image: url(../img/bg3.jpg); }
+
+.form__input {
+  border-radius: 5px;
+  border: none;
+  background: #fff;
+  padding: 5px 20px; }
+
+.form__row {
+  margin-bottom: 15px; }
+
+.form__radio-list {
+  list-style: none; }
+
+.form__reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.form__submit {
+  background-color: #e35028;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-top: 1%;
+  padding-bottom: 4%;
+  padding-left: 19%;
+  padding-right: 16%; }
+  .form__submit:hover {
+    background-color: #c1401e; }
+
+/*Стилизация чекбоксов и радиобаттонов*/
+.form__radio,
+.form__checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.form__block {
+  cursor: pointer;
+  position: relative; }
+
+.form__block input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white; }
+
+.form__block input[type="radio"]:checked + .radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e35028; }
+
+.form__block input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background-color: white; }
+
+.form__block input[type="checkbox"]:checked + .checkbox-indicator::before,
+.form__block input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/check.png); }
+
+/*Стилизация чекбоксов и радиобаттонов close*/
 @font-face {
   font-family: "Lifehack";
   src: url(../fonts/Lifehack-Medium.woff2) format("woff2");

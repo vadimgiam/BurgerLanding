@@ -3,8 +3,11 @@
 .reviews {
     min-height: 650px;
     width: 100%;
+    margin-bottom: -3.5%;
 }
-
+.reviews__title{
+  @include  visuallyHidden;  
+}
 .reviews__list {
     margin: 0;
     padding: 0;

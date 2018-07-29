@@ -22,7 +22,13 @@ $colorRed:#e35028;
     display: block;
     position: relative;
 }
-
+@mixin visuallyHidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 @mixin btn {
     background-color: $colorRed;
     border: none;
@@ -68,5 +74,11 @@ $colorRed:#e35028;
     width: 25%;
     height: 50%;
     z-index: 7;
+}
+@mixin input {
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    padding: 5px 20px;
 }
 /*mixins close*/

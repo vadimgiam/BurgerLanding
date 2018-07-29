@@ -1,0 +1,88 @@
+.order__title{
+    @include fontOrangeGagalin;
+    line-height: 64px;
+    display: flex;
+    justify-content: center;
+}
+.form__block-title{
+    @include fontUbuntu;
+    font-size: 14px;
+    line-height: 24px;
+}
+.order{
+    @include backgroundImage;
+    background-color: $colorBlack;
+    background-image: url(../img/bg3.jpg);
+}
+.form__input{
+    @include input;
+}
+.form__row{
+    margin-bottom: 15px;
+}
+.form__radio-list{
+    list-style: none;
+}
+.form__reset{
+    background-color: transparent;
+border: none;
+@extend .form__block-title;
+outline: none;
+cursor: pointer;
+}
+.form__submit{
+    @include btn;
+}
+
+/*Стилизация чекбоксов и радиобаттонов*/
+.form__radio,
+.form__checkbox {
+    @include visuallyHidden ;
+}
+.form__block{
+    cursor: pointer;
+    position: relative;
+}
+.form__block input[type="radio"]+.radio-indicator {
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.form__block input[type="radio"]:checked+.radio-indicator::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e35028;
+}
+.form__block input[type="checkbox"]+.checkbox-indicator {
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.form__block input[type="checkbox"]:checked+.checkbox-indicator::before,
+.form__block input[type="checkbox"]:checked+.checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    background-image: url(../img/check.png);
+}
+
+
+
+
+/*Стилизация чекбоксов и радиобаттонов close*/
