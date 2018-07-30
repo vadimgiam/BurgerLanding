@@ -17,7 +17,8 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   display: block;
-  position: relative; }
+  position: relative;
+  min-height: 650px; }
 
 .we-do {
   background-size: cover;
@@ -33,9 +34,9 @@ body {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.8rem;
   text-transform: uppercase; }
   .header__nav--link:hover {
     text-decoration: underline; }
@@ -54,9 +55,9 @@ body {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.8rem;
   text-transform: uppercase;
   padding-left: 16%;
   padding-right: 16%;
@@ -68,16 +69,16 @@ body {
 .we-do__text--first {
   font-family: Gagalin, Arial, sans-serif;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 85px; }
+  line-height: 5.3rem; }
 
 .we-do__text--second {
   font-family: Lifehack, Arial, sans-serif;
   color: white;
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 500;
-  line-height: 60px; }
+  line-height: 3.7rem; }
 
 .header__nav--list {
   list-style: none; }
@@ -218,9 +219,9 @@ body {
 .we-best__title {
   font-family: Gagalin, Arial, sans-serif;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 85px;
+  line-height: 5.3rem;
   color: #2f3234;
   font-size: 72px;
   line-height: 64px;
@@ -262,9 +263,9 @@ body {
 .advantages__title {
   font-family: Lifehack, Arial, sans-serif;
   color: white;
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 3.7rem;
   font-size: 24px;
   line-height: 28px;
   color: #2f3234;
@@ -275,9 +276,9 @@ body {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.8rem;
   font-size: 14px;
   line-height: 24px;
   color: #2f3234;
@@ -340,9 +341,9 @@ body {
 .reviews__hover--title {
   font-family: Gagalin, Arial, sans-serif;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 85px;
+  line-height: 5.3rem;
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
@@ -352,9 +353,9 @@ body {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.8rem;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -374,9 +375,9 @@ body {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.8rem;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
@@ -408,12 +409,189 @@ body {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
+.team {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  background-color: #111114;
+  background-image: url(../img/bg4.jpg);
+  margin-bottom: -48px;
+  position: relative; }
+
+.team__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(7, 50, 52, 0.9);
+  width: 50%;
+  min-height: 100%; }
+
+.team__title {
+  font-family: Gagalin, Arial, sans-serif;
+  color: #f9b43b;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5.3rem;
+  line-height: 4rem;
+  margin-left: -16%;
+  margin-bottom: 8%; }
+
+.team__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 19%; }
+
+/*.team__block--close{
+    height: 0;
+    overflow: hidden;
+    margin-bottom:0;
+   
+}*/
+.team__block--open {
+  height: 105px;
+  overflow: visible;
+  margin-bottom: 6%;
+  margin-left: 1%;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__member {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: Gagalin, Arial, sans-serif;
+  color: #f9b43b;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5.3rem;
+  font-size: 0.8rem;
+  line-height: 1.75rem;
+  color: white;
+  position: relative; }
+  .team__member::before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #f9b43b;
+    border-left: 5.5px solid transparent;
+    border-right: 5.5px solid transparent; }
+
+.team__block--image {
+  border-radius: 50%;
+  width: 102px;
+  height: 102px; }
+
+.team__block--title {
+  text-decoration: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-weight: 600; }
+
+.team__block--text {
+  text-decoration: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem; }
+
+.team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 8%;
+  padding-right: 17%; }
+
+.team__item {
+  margin-bottom: 4.5%; }
+
+.team__block--content {
+  margin-left: 4%;
+  margin-top: -4%;
+  width: 43%; }
+
+.menu {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  background-color: #111114;
+  background-image: url(../img/bg5.jpg);
+  margin-bottom: -48px;
+  position: relative; }
+
+.menu__list {
+  list-style: none;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 40%;
+  right: 0; }
+
+.menu__title {
+  font-family: Gagalin, Arial, sans-serif;
+  color: #f9b43b;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5.3rem;
+  line-height: 4rem;
+  color: white; }
+
+.menu__item--title {
+  font-family: Gagalin, Arial, sans-serif;
+  color: #f9b43b;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5.3rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: white; }
+
+.menu__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0; }
+
+/*.menu__item--bg1{
+    height: 100%;
+    @include backgroundImage;
+    background-image: url(../img/ac1.jpg);
+}*/
 .order__title {
   font-family: Gagalin, Arial, sans-serif;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 85px;
+  line-height: 5.3rem;
   line-height: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,9 +604,9 @@ body {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.8rem;
   font-size: 14px;
   line-height: 24px; }
 
@@ -547,10 +725,10 @@ body {
 
 @font-face {
   font-family: "Ubuntu";
-  src: url(../../fonts/Ubuntu/Ubuntu-Medium.woff2) format("woff2");
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.woff2) format("woff2");
   font-weight: 500; }
 
 @font-face {
   font-family: "Ubuntu";
-  src: url(../../fonts/Ubuntu/Ubuntu-B.woff2) format("woff2");
+  src: url(../fonts/Ubuntu/Ubuntu-B.woff2) format("woff2");
   font-weight: 700; }

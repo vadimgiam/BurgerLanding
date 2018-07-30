@@ -1,0 +1,98 @@
+.team{
+    @include backgroundImage;
+    background-color: #111114;
+    background-image: url(../img/bg4.jpg);
+    margin-bottom: -48px;
+    position: relative;
+}
+.team__right{
+position: absolute;
+top: 0;
+right: 0;
+background-color: rgba(7,50,52,0.9);
+width: 50%;
+min-height: 100%;
+}
+.team__title{
+    @include fontOrangeGagalin;
+    line-height: 4rem;
+    margin-left: -16%;
+    margin-bottom: 8%;
+}
+.team__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 19%;
+}
+/*.team__block--close{
+    height: 0;
+    overflow: hidden;
+    margin-bottom:0;
+   
+}*/
+.team__block--open {
+    height: 105px;
+    overflow: visible;
+    margin-bottom: 6%;
+    margin-left: 1%;
+    margin-top: 2%;
+    display: flex;
+}
+.team__member{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include fontOrangeGagalin ;
+    font-size: 0.8rem;
+    line-height: 1.75rem;
+    color: $colorWhite; 
+    position: relative;
+
+&::before{
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #f9b43b;
+    border-left: 5.5px solid transparent;
+    border-right: 5.5px solid transparent;
+}
+}
+
+.team__block--image{
+    border-radius: 50%;
+    width: 102px;
+    height: 102px;
+}
+.team__block--title{
+    @include fontUbuntu ;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight:600;
+}
+.team__block--text{
+    @include fontUbuntu ;
+    font-size: 0.8rem;
+    line-height: 1.5rem
+    
+}
+.team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+    padding-right: 17%;
+}
+.team__item {
+    margin-bottom: 4.5%;
+}
+.team__block--content {
+    margin-left: 4%;
+    margin-top: -4%;
+    width: 43%;
+}

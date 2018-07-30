@@ -87,7 +87,10 @@
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__img advantages__img--hand">
-                            <img src="img/icons/hand.svg" alt="рука">
+                            <!--<img src="img/icons/hand.svg" alt="рука">-->
+                            <svg class="advantages__svg-sprite" width="100" height="100">
+                                <use xlink:href="img/sprite.svg#hand"></use>
+                            </svg>
                         </div>
                         <h2 class="advantages__title">Ручная сборка</h2>
                         <p class="advantages__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
@@ -95,7 +98,10 @@
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__img advantages__img--sheet">
-                            <img src="img/icons/natural.svg" alt="лист">
+                            <!--<img src="img/icons/natural.svg" alt="лист">-->
+                            <svg class="advantages__svg-sprite" width="100" height="100">
+                                <use xlink:href="img/sprite.svg#sheet"></use>
+                            </svg>
                         </div>
                         <h2 class="advantages__title">Натуральные ингредиенты</h2>
                         <p class="advantages__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
@@ -103,6 +109,73 @@
                 </ul>
             </div>
         </section>
+<section class="team">
+
+<div class="team__right">
+<div class="team__content">
+    <h1 class="team__title">Команда</h1>
+    <ul class="team__list">
+        <li class="team__item">
+           <button class="team__member team__member--yellow">Дэниэл Редклиф</button> 
+           
+        </li>
+        <li class="team__item">
+            <button class="team__member team__member--yellow">Ричард Джеймс</button> 
+            <div class="team__block team__block--open team__block--close">
+                <div class="team__block--image-wrap"> <img src="img/teamBlockimg.jpg" alt="Дэниэл Редклиф" class="team__block--image"> </div>
+                <div class="team__block--content ">
+                    <h3 class="team__block--title">Оператор</h3>
+                    <p class="team__block--text">С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
+                </div>
+               </div>
+         </li>
+         <li class="team__item">
+            <button class="team__member team__member--yellow">Джейк Финн</button> 
+            
+         </li>
+         <li class="team__item ">
+            <button class="team__member team__member--yellow">Николай Иванов</button> 
+            
+         </li>
+    </ul>
+</div>
+</div>
+
+</section>
+
+<section class="menu">
+<h1 class="menu__title">Меню</h1>
+<ul class="menu__list">
+    <li class="menu__item menu__item--bg1">
+        <button class="menu__btn"> 
+                <h2 class="menu__item--title menu__item--yellow">Для мясоедов</h2>
+                <div class="menu__block menu__block--open menu__block--close">
+                    <p class="menu__text "></p>
+                </div>
+        </button>
+        
+    </li>
+    <li class="menu__item menu__item--bg2">
+            <button class="menu__btn">
+                    <h2 class="menu__item--title menu__item--yellow">Вегатарианское</h2>
+                    <div class="menu__block menu__block--open menu__block--close">
+                        <p class="menu__text "></p>
+                    </div>
+            </button>
+        
+    </li>
+    <li class="menu__item menu__item--bg3">
+            <button class="menu__btn">
+                    <h2 class="menu__item--title menu__item--yellow">Диетическое</h2>
+                    <div class="menu__block menu__block--open menu__block--close">
+                        <p class="menu__text "></p>
+                    </div>
+            </button>
+       
+    </li>
+</ul>
+
+</section>
 
         <section class="reviews">
             <h1 class="reviews__title">Отзывы клиентов</h1>

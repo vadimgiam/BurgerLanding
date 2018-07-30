@@ -8,19 +8,21 @@ $colorRed:#e35028;
     text-decoration: none;
     font-family: Ubuntu, Arial, sans-serif;
     color: $colorWhite;
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 1.8rem;
 }
 
 @mixin container {
     margin: 0;
     padding: 0;
     width: 940px;
+    //width: 95%;
     margin: 0 auto;
     padding: 0 10px;
     display: block;
     position: relative;
+    min-height: 650px;
 }
 @mixin visuallyHidden {
     position: absolute;
@@ -48,17 +50,17 @@ $colorRed:#e35028;
 @mixin fontOrangeGagalin {
     font-family: Gagalin, Arial, sans-serif;
     color: $colorOrange;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 400;
-    line-height: 85px;
+    line-height: 5.3rem;
 }
 
 @mixin fontWhiteLifehack {
     font-family: Lifehack, Arial, sans-serif;
     color: $colorWhite;
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 3.7rem;
 }
 
 @mixin backgroundImage {

@@ -1,0 +1,38 @@
+.menu{
+    @include backgroundImage;
+    background-color: #111114;
+    background-image: url(../img/bg5.jpg);
+    margin-bottom: -48px;
+    position: relative;
+}
+.menu__list{
+    list-style: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+.menu__title{
+    @include fontOrangeGagalin;
+    line-height: 4rem;
+    color: $colorWhite;
+}
+.menu__item--title{
+    @include fontOrangeGagalin;
+    font-size:2.5rem;
+    line-height: 4rem;
+    color: $colorWhite;
+}
+.menu__btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+/*.menu__item--bg1{
+    height: 100%;
+    @include backgroundImage;
+    background-image: url(../img/ac1.jpg);
+}*/
