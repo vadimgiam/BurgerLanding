@@ -18,7 +18,19 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 .footer__socials--link{
    text-decoration: none;
+}
+.footer .container{
+    display: flex;
+}
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+}
+.footer__left,
+.footer__right {
+    width: 50%;
 }
