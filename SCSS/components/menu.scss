@@ -7,9 +7,9 @@
 }
 .menu__list{
     list-style: none;
-    transform: rotate(-90deg);
+    //transform: rotate(-90deg);
     position: absolute;
-    top: 40%;
+    top: 0;
     right: 0;
 }
 .menu__title{
@@ -22,6 +22,7 @@
     font-size:2.5rem;
     line-height: 4rem;
     color: $colorWhite;
+    transform: rotate(-90deg);
 }
 .menu__btn{
     background-color: transparent;
@@ -32,9 +33,27 @@
     margin: 0;
     font-size: 0.8rem;
     line-height: 1.5rem;
+
+   
 }
-/*.menu__item--bg1{
-    height: 100%;
+.menu__item--bg1{
+    height: 100vh;
     @include backgroundImage;
     background-image: url(../img/ac1.jpg);
-}*/
+    width: 79px;
+    word-wrap: normal;
+}
+.menu__item--bg2{
+    height: 100vh;
+    @include backgroundImage;
+    background-image: url(../img/ac2.jpg);
+    width: 79px;
+    word-wrap: normal;
+}
+.menu__item--bg3{
+    height: 100vh;
+    @include backgroundImage;
+    background-image: url(../img/ac3.jpg);
+    width: 79px;
+    word-wrap: normal;
+}
