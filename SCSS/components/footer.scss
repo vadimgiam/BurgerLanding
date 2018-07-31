@@ -1,8 +1,24 @@
 .footer{
-    position: absolute;
+    
     background-color: $colorBlack;
-    left: 0;
-    top: 0;
+    
     min-height: 60px;
     width: 100%;
+}
+.footer__address{
+    @include fontUbuntu;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.footer__phone{
+    @extend .footer__address;
+    color: $colorOrange;
+}
+.footer__socials--list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__socials--link{
+   text-decoration: none;
 }

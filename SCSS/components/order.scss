@@ -1,13 +1,13 @@
 .order__title{
     @include fontOrangeGagalin;
-    line-height: 64px;
+    line-height: 4rem;
     display: flex;
     justify-content: center;
 }
 .form__block-title{
     @include fontUbuntu;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
 }
 .order{
     @include backgroundImage;
