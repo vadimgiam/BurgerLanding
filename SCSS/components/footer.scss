@@ -1,10 +1,12 @@
 .footer{
     
     background-color: $colorBlack;
-    
+    @include backgroundImage;
+    background-image: url(../img/bg6.jpg);
     min-height: 60px;
     width: 100%;
 }
+
 .footer__address{
     @include fontUbuntu;
     font-size: 0.8rem;
@@ -13,6 +15,9 @@
 .footer__phone{
     @extend .footer__address;
     color: $colorOrange;
+}
+.advantages__svg-sprite--phone{
+    margin-bottom: -0.7%;
 }
 .footer__socials--list{
     list-style: none;
@@ -25,12 +30,35 @@
 }
 .footer .container{
     display: flex;
+    min-height: 0;
 }
 .footer__contacts{
     display: flex;
     flex-direction: column;
+    margin-bottom: -0.5%;
 }
 .footer__left,
 .footer__right {
     width: 50%;
+}
+.footer__right {
+    display: flex;
+justify-content: flex-end;
+padding-top: 3.1%;
+}
+.footer__socials--item{
+    margin-right: 20px;
+    &:hover{
+        .advantages__svg-sprite--socials{
+            fill: $colorWhite;
+        }
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.advantages__svg-sprite--socials{
+    fill: #595959;
+    transition: fill  1s ease-out;
 }
