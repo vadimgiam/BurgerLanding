@@ -10,8 +10,8 @@
 .we-best__title {
     @include fontOrangeGagalin;
     color: $colorBlack;
-    font-size: 72px;
-    line-height: 64px;
+    font-size: 4.5rem;
+    line-height: 4rem;
     display: flex;
     justify-content: center;
  padding-top: 13%;
@@ -32,16 +32,16 @@
 }
 .advantages__title{
     @include fontWhiteLifehack;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     color: $colorBlack;
     text-align: center;
     margin-bottom: 0;
 }
 .advantages__text {
     @include fontUbuntu;
-    font-size: 14px;
-    line-height: 24px;
+    font-size:0.875rem;
+    line-height: 1.5rem;
     color: $colorBlack;
     text-align: center;
 }
@@ -53,22 +53,22 @@
     &--meat{
        /* background-image: url(../../img/icons/meat.svg);*/
         
-        width:100px;
-        height: 90px;
+        width:6.25rem;
+        height: 5.6rem;
         
     }
     &--hand{
         /*background-image: url(../../img/icons/hand.svg);*/
         
-        width:70px;
-        height: 85px;
+        width:4.375rem;
+        height: 5.31rem;
         
     }
     &--sheet{
         /*background-image: url(../../img/icons/natural.svg);*/
         
-        width:87px;
-        height: 76px;
+        width:5.43rem;
+        height: 4.75rem;
        
     }
     

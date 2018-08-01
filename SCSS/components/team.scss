@@ -2,7 +2,7 @@
     @include backgroundImage;
     background-color: #111114;
     background-image: url(../img/bg4.jpg);
-    margin-bottom: -48px;
+    
     position: relative;
 }
 .team__right{
@@ -66,8 +66,8 @@ min-height: 100%;
 
 .team__block--image{
     border-radius: 50%;
-    width: 102px;
-    height: 102px;
+    width: 6.37rem;
+    height: 6.37rem;
 }
 .team__block--title{
     @include fontUbuntu ;
@@ -78,7 +78,7 @@ min-height: 100%;
 .team__block--text{
     @include fontUbuntu ;
     font-size: 0.8rem;
-    line-height: 1.5rem
+    line-height: 1.5rem;
     
 }
 .team__content {

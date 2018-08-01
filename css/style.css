@@ -28,7 +28,7 @@ body {
   width: 100%;
   background-color: #111114;
   background-image: url(../img/bg1.jpg);
-  margin-bottom: -48px; }
+  margin-bottom: -3.5%; }
 
 .header__nav--link {
   text-decoration: none;
@@ -134,8 +134,8 @@ body {
   background-image: url(../img/icons/arrow-scroll.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 30px;
-  height: 16px; }
+  width: 1.875rem;
+  height: 1rem; }
 
 /*Сетки*/
 .header {
@@ -223,8 +223,8 @@ body {
   font-weight: 400;
   line-height: 5.3rem;
   color: #2f3234;
-  font-size: 72px;
-  line-height: 64px;
+  font-size: 4.5rem;
+  line-height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,8 +266,8 @@ body {
   font-size: 4rem;
   font-weight: 500;
   line-height: 3.7rem;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   color: #2f3234;
   text-align: center;
   margin-bottom: 0; }
@@ -279,8 +279,8 @@ body {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.8rem;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   color: #2f3234;
   text-align: center; }
 
@@ -290,16 +290,19 @@ body {
   background-position: center center; }
   .advantages__img--meat {
     /* background-image: url(../../img/icons/meat.svg);*/
-    width: 100px;
-    height: 90px; }
+    width: 6.25rem;
+    height: 5.6rem; }
   .advantages__img--hand {
     /*background-image: url(../../img/icons/hand.svg);*/
-    width: 70px;
-    height: 85px; }
+    width: 4.375rem;
+    height: 5.31rem; }
   .advantages__img--sheet {
     /*background-image: url(../../img/icons/natural.svg);*/
-    width: 87px;
-    height: 76px; }
+    width: 5.43rem;
+    height: 4.75rem; }
+
+.slider {
+  background-color: #f9b43b; }
 
 .reviews {
   min-height: 650px;
@@ -344,9 +347,9 @@ body {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 5.3rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   color: white; }
 
 .reviews__hover--text {
@@ -356,9 +359,9 @@ body {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.8rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   width: 86%; }
 
 .reviews__hover--btn {
@@ -378,9 +381,9 @@ body {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.8rem;
-  font-size: 13px;
+  font-size: 0.81rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.875rem;
   background-color: #2f3234;
   padding-bottom: 1%;
   padding-left: 5%;
@@ -417,7 +420,6 @@ body {
   width: 100%;
   background-color: #111114;
   background-image: url(../img/bg4.jpg);
-  margin-bottom: -48px;
   position: relative; }
 
 .team__right {
@@ -488,8 +490,8 @@ body {
 
 .team__block--image {
   border-radius: 50%;
-  width: 102px;
-  height: 102px; }
+  width: 6.37rem;
+  height: 6.37rem; }
 
 .team__block--title {
   text-decoration: none;
@@ -542,14 +544,30 @@ body {
   width: 100%;
   background-color: #111114;
   background-image: url(../img/bg5.jpg);
-  margin-bottom: -48px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .menu__list {
   list-style: none;
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0; }
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .menu__title {
   font-family: Gagalin, Arial, sans-serif;
@@ -558,7 +576,9 @@ body {
   font-weight: 400;
   line-height: 5.3rem;
   line-height: 4rem;
-  color: white; }
+  color: white;
+  margin-top: 7%;
+  margin-left: 6%; }
 
 .menu__item--title {
   font-family: Gagalin, Arial, sans-serif;
@@ -571,7 +591,10 @@ body {
   color: white;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+  transform: rotate(-90deg);
+  margin: 0;
+  white-space: nowrap;
+  margin-top: 575%; }
 
 .menu__btn {
   background-color: transparent;
@@ -581,40 +604,62 @@ body {
   padding: 0;
   margin: 0;
   font-size: 0.8rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  height: 100vh; }
 
-.menu__item--bg1 {
-  height: 100vh;
+.menu__block {
+  background-color: rgba(89, 89, 89, 0.93); }
+
+.menu__block--open {
+  width: 33.75rem;
+  overflow: visible; }
+
+/*.menu__block--close{
+    width: 0;
+    overflow: hidden;
+}*/
+.menu__text {
+  text-decoration: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  width: 29.8rem;
+  padding-top: 5%;
+  padding-left: 6%; }
+
+.menu__btn--bg1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 650px;
   width: 100%;
   background-image: url(../img/ac1.jpg);
-  width: 79px;
-  word-wrap: normal; }
+  width: 5rem;
+  height: 100%; }
 
-.menu__item--bg2 {
-  height: 100vh;
+.menu__btn--bg2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 650px;
   width: 100%;
   background-image: url(../img/ac2.jpg);
-  width: 79px;
-  word-wrap: normal; }
+  width: 5rem;
+  height: 100%; }
 
-.menu__item--bg3 {
-  height: 100vh;
+.menu__btn--bg3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 650px;
   width: 100%;
   background-image: url(../img/ac3.jpg);
-  width: 79px;
-  word-wrap: normal; }
+  width: 5rem;
+  height: 100%; }
 
 .order__title {
   font-family: Gagalin, Arial, sans-serif;
@@ -779,6 +824,15 @@ body {
 
 .form__block-title--mr {
   margin-left: 6%; }
+
+.video {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  background-color: #efedeb;
+  background-image: url(../img/bg7.jpg); }
 
 .map {
   background-size: cover;

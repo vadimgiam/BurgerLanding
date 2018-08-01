@@ -2,20 +2,30 @@
     @include backgroundImage;
     background-color: #111114;
     background-image: url(../img/bg5.jpg);
-    margin-bottom: -48px;
+    
     position: relative;
+    overflow: hidden;
 }
 .menu__list{
     list-style: none;
-    //transform: rotate(-90deg);
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.menu__item{
+    display: flex;
+	justify-content: flex-end;
 }
 .menu__title{
     @include fontOrangeGagalin;
     line-height: 4rem;
     color: $colorWhite;
+    margin-top: 7%;
+    margin-left: 6%;
 }
 .menu__item--title{
     @include fontOrangeGagalin;
@@ -23,6 +33,9 @@
     line-height: 4rem;
     color: $colorWhite;
     transform: rotate(-90deg);
+    margin: 0;
+    white-space: nowrap;
+    margin-top: 575%;
 }
 .menu__btn{
     background-color: transparent;
@@ -33,27 +46,44 @@
     margin: 0;
     font-size: 0.8rem;
     line-height: 1.5rem;
-
-   
-}
-.menu__item--bg1{
     height: 100vh;
+}
+.menu__block{
+   
+   background-color: rgba(89,89,89,0.93);
+  
+}
+.menu__block--open{
+    width: 33.75rem;
+    overflow: visible;
+}
+/*.menu__block--close{
+    width: 0;
+    overflow: hidden;
+}*/
+.menu__text{
+    @include fontUbuntu ;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+   width: 29.8rem;
+   padding-top: 5%;
+   padding-left: 6%;
+}
+.menu__btn--bg1{
     @include backgroundImage;
     background-image: url(../img/ac1.jpg);
-    width: 79px;
-    word-wrap: normal;
+    width: 5rem;
+    height: 100%;
 }
-.menu__item--bg2{
-    height: 100vh;
+.menu__btn--bg2{
     @include backgroundImage;
     background-image: url(../img/ac2.jpg);
-    width: 79px;
-    word-wrap: normal;
+    width: 5rem;
+    height: 100%;
 }
-.menu__item--bg3{
-    height: 100vh;
+.menu__btn--bg3{
     @include backgroundImage;
     background-image: url(../img/ac3.jpg);
-    width: 79px;
-    word-wrap: normal;
+    width: 5rem;
+    height: 100%;
 }
