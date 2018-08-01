@@ -83,52 +83,52 @@ body {
 .header__nav--list {
   list-style: none; }
 
-/*Декорирование breadcrumbs*/
-.breadcrumbs__btn {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px; }
+/*Стилизация Breadcrumbs*/
+.breadcrumbs__list {
+  list-style: none; }
 
-.breadcrumbs__label {
-  cursor: pointer;
+.breadcrumbs__link {
+  width: 5px;
+  height: 5px;
+  display: block;
   position: relative; }
 
-.breadcrumbs__label input[type="radio"] + .breadcrumbs__indicator {
+.breadcrumbs__link:after {
   position: absolute;
-  top: 4px;
-  left: 3px;
-  width: 6px;
+  content: "";
+  background: white;
+  color: white;
   height: 6px;
-  border-radius: 50%;
-  background-color: white; }
+  width: 6px;
+  display: block;
+  border-radius: 50%; }
 
-.breadcrumbs__label input[type="radio"]:checked + .breadcrumbs__indicator::before {
+.breadcrumbs__link:hover::before {
   content: "";
+  border: 1px solid white;
+  height: 16px;
+  width: 16px;
+  display: block;
+  border-radius: 50%;
   position: absolute;
   top: -6px;
-  left: -6px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid white; }
+  left: -6px; }
 
-.breadcrumbs__label input[type="radio"]:hover + .breadcrumbs__indicator::before {
+.breadcrumbs__link:active::before {
   content: "";
+  border: 1px solid white;
+  height: 16px;
+  width: 16px;
+  display: block;
+  border-radius: 50%;
   position: absolute;
   top: -6px;
-  left: -6px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid white; }
+  left: -6px; }
 
 .breadcrumbs__item {
-  margin-bottom: 3px;
-  color: transparent; }
+  margin-bottom: 300%; }
 
-/*Декорирование Breadcrumbs close*/
+/*Стилизация Breadcrumbs close*/
 .we-do__next-step--link {
   display: block;
   background-image: url(../img/icons/arrow-scroll.svg);

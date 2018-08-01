@@ -54,55 +54,62 @@ position: relative;
     {
     list-style: none;
 }
+/*Стилизация Breadcrumbs*/
 
-/*Декорирование breadcrumbs*/
-.breadcrumbs__btn{
-@include visuallyHidden ;
-}
+.breadcrumbs__list{
+    list-style: none;
+    
+  }
 
-.breadcrumbs__label {
-    cursor: pointer;
-    position: relative;
-}
-
-.breadcrumbs__label input[type="radio"]+.breadcrumbs__indicator {
-    position: absolute;
-    top: 4px;
-    left: 3px;
-    width: 6px;
+  .breadcrumbs__link{
+    width: 5px;
+      height: 5px;
+      display: block;
+      position: relative;
+  }
+  
+  .breadcrumbs__link:after
+  {
+    position:absolute;
+    content: "";
+    background: white;
+    color: white;
     height: 6px;
+    width: 6px;
+    display: block;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.breadcrumbs__label input[type="radio"]:checked+.breadcrumbs__indicator::before {
+  }
+  .breadcrumbs__link:hover::before
+  {
     content: "";
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: 16px;
+    border:1px solid white;
     height: 16px;
+    width: 16px;
+    display: block;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.breadcrumbs__label input[type="radio"]:hover+.breadcrumbs__indicator::before {
+    position:absolute;
+     top:-6px;
+    left:-6px;
+  }
+  .breadcrumbs__link:active::before
+  {
     content: "";
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: 16px;
+    border:1px solid white;
     height: 16px;
+    width: 16px;
+    display: block;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 1);
-}
+    position:absolute;
+     top:-6px;
+    left:-6px;
+  }
 
-.breadcrumbs__item {
-    margin-bottom: 3px;
-    color: transparent;
-}
+  .breadcrumbs__item{
+    margin-bottom:300%;
+  }
+  
+/*Стилизация Breadcrumbs close*/
 
-/*Декорирование Breadcrumbs close*/
 
 .we-do__next-step--link {
     display: block;
