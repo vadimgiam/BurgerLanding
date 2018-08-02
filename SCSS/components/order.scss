@@ -3,6 +3,11 @@
     line-height: 4rem;
     display: flex;
     justify-content: center;
+    @include phone {
+        text-align: center;
+        font-size: 3.57rem;
+        line-height: 4.28rem;
+    }
 }
 .form__block-title{
     @include fontUbuntu;
@@ -26,6 +31,9 @@
 .form__row{
     display: flex;
     margin-bottom: 20px;
+    @include phone {
+        justify-content: center;
+    }
 }
 .form__radio-list{
     list-style: none;
@@ -34,6 +42,10 @@
     margin-left: 6%;
     padding-left: 0;
     margin-top: 8%;
+    @include phone {
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 .form__radio-item {
     margin-right: 43px;
@@ -76,6 +88,9 @@ cursor: pointer;
     height: 16px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 1);
+    @include phone {
+        top: 19px;
+    }
 }
 .form__block input[type="radio"]:checked+.radio-indicator::before {
     content: "";
@@ -94,6 +109,10 @@ cursor: pointer;
     width: 15px;
     height: 15px;
     background-color: rgba(255, 255, 255, 1);
+    @include phone {
+        top: 3px;
+        left: 176px;
+    }
 }
 .form__block input[type="checkbox"]:checked+.checkbox-indicator::before,
 .form__block input[type="checkbox"]:checked+.checkbox-indicator::after {
@@ -107,16 +126,33 @@ cursor: pointer;
     background-image: url(../img/check.png);
 }
 /*Стилизация чекбоксов и радиобаттонов close*/
+.form__radio-item {
+    @include phone {
+        margin-right: 40px;
+    margin-left: 25px;
+       }
+}
 .order__form{
     display: flex;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .form__left,
 .form__right{
-    width: 45%;
+    width: 470px;
 }
 .form__right {
     margin-left: 6%;
+    @include tablet {
+        margin-left: 0;
+    }
 }
 .form__block-title--mr{
     margin-left: 6%;
+    @include phone {
+     display: flex;
+    justify-content: center;
+    }
 }

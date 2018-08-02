@@ -4,6 +4,12 @@
     min-height: 650px;
     width: 100%;
     margin-bottom: -3.5%;
+    @include phone {
+        min-height: 800px;
+    }
+    @include tablet {
+        min-height: 1025px;
+    }
 }
 .reviews__title{
   @include  visuallyHidden;  

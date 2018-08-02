@@ -1,6 +1,6 @@
 
 //Section We-do
-@media (max-width:768px){
+/*@media (max-width:768px){
   
 .container{
     width: 720px;
@@ -28,6 +28,7 @@
 }
 }
 
+
 @media (min-width:320px) and (max-width:480px){
     html{
         font-size: 14px;
@@ -38,20 +39,20 @@
     .header__nav--btn-wrap {
         margin-left: 44%;
     }
-    /*.we-do__img {
+    .we-do__img {
         width: 26rem;
         height: 20.5rem;
-    }*/
+    }
     .we-do__text {  
         width: 73%;
     }
 }
-
+*/
 
 //Section We-do close
 
 //Section We-best
-@media (max-width:768px){
+/*@media (max-width:768px){
     .we-best__title {
         margin-bottom: 9%;
     }
@@ -60,15 +61,16 @@
     }
 
 }
+*/
 
-
-@media (min-width:320px) and (max-width:480px){
+/*@media (min-width:320px) and (max-width:480px){
     .advantages{
         flex-direction: column;
     }
     .advantages__item{
         display: flex;
         flex-direction: row;
+        margin-bottom: 7%;
     }
     .advantages__title{
         text-align: left;
@@ -76,7 +78,24 @@
     .advantages__text{
         text-align: left;
     }
-}
+    .we-best__title{
+        font-size: 3.57rem;
+        line-height: 4.29rem;
+        margin-bottom: 0%;
+    }
+    .advantages__text-wrap {
+        width: 62%;
+    }
+    .advantages__img--meat{
+        margin-right: 9%;
+    }
+    .advantages__img--hand{
+        margin-right: 15%;
+    }
+    .advantages__img--sheet{
+        margin-right: 12%;
+    }
+}*/
 
 
 
@@ -85,5 +104,3 @@
 
 
 
-
-//Section we-best close

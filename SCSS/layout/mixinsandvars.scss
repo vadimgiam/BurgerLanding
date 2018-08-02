@@ -69,6 +69,12 @@ $colorRed:#e35028;
     background-position: center center;
     min-height: 650px;
     width: 100%;
+    @include phone {
+        min-height: 800px;
+    }
+    @include tablet {
+        min-height: 1025px;
+    }
 }
 @mixin bgImageReview {
     background-repeat: no-repeat;
@@ -85,3 +91,20 @@ $colorRed:#e35028;
     box-sizing: border-box;
 }
 /*mixins close*/
+
+/*media*/
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin phone {
+    @media screen and (min-width:320px) and (max-width:480px) {
+        @content;
+    }
+}
+
+
+
+
+/*media close*/
