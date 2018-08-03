@@ -40,6 +40,7 @@ position: relative;
     &:hover {
         text-decoration: underline;
     }
+    
 }
 
 .header__nav--btn {
@@ -123,7 +124,9 @@ position: relative;
   
 /*Стилизация Breadcrumbs close*/
 
-
+.header__logo{
+    z-index: 51;
+}
 .we-do__next-step--link {
     display: block;
     background-image: url(../img/icons/arrow-scroll.svg);
@@ -145,6 +148,7 @@ position: relative;
 
 .header__nav--list {
     display: flex;
+    
 }
 
 .header__nav {
@@ -153,11 +157,17 @@ position: relative;
     @include tablet {
         display: none;
     }
+    @include phone {
+        display: none;
+    }
+  
 }
 
 .header__nav--item {
     position: relative;
     margin-right: 38px;
+    
+
     &:last-child {
         margin-right: 0;
     }
@@ -170,10 +180,12 @@ position: relative;
         border-radius: 50%;
         top: 13px;
         left: -19px;
+        
     }
     &:first-child::before {
         display: none;
     }
+   
 }
 
 .header__nav--btn-wrap {
@@ -228,7 +240,7 @@ position: relative;
     position: fixed;
     top: 14%;
     right: 15.5%;
-    z-index: 50;
+    z-index: 30;
 }
 
 .we-do__next-step {
@@ -238,3 +250,89 @@ position: relative;
 }
 
 /*Сетки close*/
+
+
+
+/*popup nav*/
+.nav-popup{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    background-color: rgba(47,50,52,0.9);
+    display: none;
+    z-index: 50;
+    @include tablet {
+        display: none;
+    }
+    @include phone{
+        display: none;
+    }
+}
+
+
+.nav-popup--link{
+    @include tablet {
+        @include fontUbuntu;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+.nav-popup__nav{
+    @include tablet {
+        
+    margin: 0;
+    padding: 0;
+    margin-top: 28%;
+    } 
+}
+.nav-popup--list{
+    list-style: none;
+    @include tablet {
+        flex-direction: column;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    }
+    .nav-popup--item{
+        position: relative;
+        
+        @include tablet {
+            
+            margin-bottom: 4.2%;
+         }
+    
+       
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $colorWhite;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            top: -60%;
+    left: 50%;
+            @include tablet {
+                top: -60%;
+    left: 50%;
+       
+            }
+        }
+        &:first-child::before {
+            display: none;
+        }
+    }
+
+    .nav-popup__btn{
+       // background-color: transparent;
+      //  border: none;
+    }
