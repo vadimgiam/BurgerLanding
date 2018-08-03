@@ -88,6 +88,41 @@ body {
   .header__nav--btn:hover {
     background-color: #c1401e; }
 
+.header__nav--hamburger {
+  position: absolute;
+  text-decoration: none;
+  display: none;
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px; }
+  @media screen and (max-width: 768px) {
+    .header__nav--hamburger {
+      display: block;
+      top: 5%;
+      right: 2.5%; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .header__nav--hamburger {
+      display: block;
+      top: 5.5%;
+      right: 5.5%; } }
+  .header__nav--hamburger::before {
+    content: "";
+    position: absolute;
+    top: 200%;
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px; }
+  .header__nav--hamburger::after {
+    content: "";
+    position: absolute;
+    top: -200%;
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px; }
+
 .we-do__text--first {
   font-family: Gagalin, Arial, sans-serif;
   color: #f9b43b;
@@ -348,6 +383,22 @@ body {
         left: 50%; } }
   .nav-popup--item:first-child::before {
     display: none; }
+
+.nav-popup__btn {
+  position: absolute;
+  top: 0.35%;
+  right: 14%;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(../img/btnclose.png);
+  background-repeat: no-repeat;
+  outline: none; }
 
 .we-best {
   background-size: cover;
