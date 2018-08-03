@@ -447,7 +447,7 @@ body {
   background-color: #2f3234; }
 
 .reviews__hover {
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -455,7 +455,7 @@ body {
   top: 0%;
   left: 0%;
   background-color: rgba(20, 20, 20, 0.7);
-  opacity: 1;
+  opacity: 0;
   padding-top: 10%;
   padding-left: 7%; }
   @media screen and (max-width: 768px) {
