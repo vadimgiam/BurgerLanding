@@ -62,6 +62,10 @@
     display: flex;
 justify-content: flex-end;
 padding-top: 3.1%;
+@include phone {
+    
+justify-content: center;
+}
 }
 .footer__socials--item{
     margin-right: 20px;
