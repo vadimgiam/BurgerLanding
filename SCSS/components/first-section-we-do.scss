@@ -13,6 +13,7 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
+    
     min-height: 100%;
     overflow: hidden;
 }
@@ -21,11 +22,11 @@ body {
     @include container;
     @include tablet {
         width: 720px;
-        min-height: 1025px;
+        min-height: 650px;
     }
     @include phone {
         width: 460px;
-        min-height: 800px;
+        min-height: 650px;
     }
 }
 
@@ -252,6 +253,7 @@ body {
     background-image: url(../img/burgerfirst.png);
     width: 28.18rem;
     height: 26.5rem;
+    background-size: cover;
     @include tablet {
         margin-left: 0;
     }

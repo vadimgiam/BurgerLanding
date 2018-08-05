@@ -16,7 +16,8 @@ $colorRed:#e35028;
 @mixin container {
     margin: 0;
     padding: 0;
-    width: 940px;
+    
+    max-width: 940px;
     //width: 95%;
     margin: 0 auto;
     padding: 0 10px;

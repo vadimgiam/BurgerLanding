@@ -21,7 +21,7 @@ body {
 .container {
   margin: 0;
   padding: 0;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
   display: block;
@@ -30,11 +30,11 @@ body {
   @media screen and (max-width: 768px) {
     .container {
       width: 720px;
-      min-height: 1025px; } }
+      min-height: 650px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .container {
       width: 460px;
-      min-height: 800px; } }
+      min-height: 650px; } }
 
 .we-do {
   background-size: cover;
@@ -269,7 +269,8 @@ body {
   background-position: center center;
   background-image: url(../img/burgerfirst.png);
   width: 28.18rem;
-  height: 26.5rem; }
+  height: 26.5rem;
+  background-size: cover; }
   @media screen and (max-width: 768px) {
     .we-do__img {
       margin-left: 0; } }
@@ -556,10 +557,12 @@ body {
   margin-bottom: -3.5%; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .reviews {
-      min-height: 800px; } }
+      min-height: 650px;
+      height: 100vh; } }
   @media screen and (max-width: 768px) {
     .reviews {
-      min-height: 1025px; } }
+      min-height: 650px;
+      height: 100vh; } }
 
 .reviews__title {
   position: absolute;
@@ -688,7 +691,9 @@ body {
   width: 100%;
   height: 100%;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .btn-text1 {
   display: block; }
