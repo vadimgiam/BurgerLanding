@@ -39,10 +39,10 @@ $colorRed:#e35028;
     color: $colorWhite;
     text-transform: uppercase;
     cursor: pointer;
-    padding-top: 1%;
-    padding-bottom: 4%;
-    padding-left: 19%;
-    padding-right: 16%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     &:hover {
         background-color: #c1401e;
     }

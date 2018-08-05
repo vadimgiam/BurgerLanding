@@ -59,10 +59,12 @@ cursor: pointer;
 }
 .form__submit{
     @include btn;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    @include fontUbuntu;
+    line-height: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-right: 3%;
 }
 
