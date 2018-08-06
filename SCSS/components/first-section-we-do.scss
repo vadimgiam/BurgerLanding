@@ -41,6 +41,7 @@ body {
 .header__nav--link {
     @include fontUbuntu;
     text-transform: uppercase;
+    white-space: nowrap;
     &:hover {
         text-decoration: underline;
     }
