@@ -4,12 +4,10 @@
     background-image: url(../img/bg4.jpg);
     
     position: relative;
-    @include phone {
-        min-height: 800px;
-    }
-    @include tablet {
-        min-height: 1025px;
-    }
+    
+}
+.team__wrap{
+    min-height: 650px;
 }
 .team__right{
 position: absolute;

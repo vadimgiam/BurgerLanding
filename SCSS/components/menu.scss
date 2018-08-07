@@ -6,6 +6,9 @@
     position: relative;
     overflow: hidden;
 }
+.menu__wrap{
+    min-height: 650px;
+}
 .menu__list{
     list-style: none;
     position: absolute;
@@ -15,6 +18,7 @@
     justify-content: flex-end;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 .menu__item{
     display: flex;
@@ -53,6 +57,7 @@
    background-color: rgba(89,89,89,0.93);
   
 }
+
 .menu__block--open{
     width: 33.75rem;
     overflow: visible;

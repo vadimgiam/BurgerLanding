@@ -5,7 +5,7 @@
     
     background-color: #f6f0ec;
     background-image: url(../img/bg2.jpg);
-    margin-bottom: -1.65%;
+    
 }
 .we-best__title {
     @include fontOrangeGagalin;
@@ -14,6 +14,7 @@
     line-height: 4rem;
     display: flex;
     justify-content: center;
+    margin-top: 0;
  padding-top: 13%;
     margin-bottom: 6%;
     @include  tablet {

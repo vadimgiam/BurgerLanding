@@ -3,6 +3,10 @@
  background-image: linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
  padding-top: 9.5%;  
  position: relative;
+ min-height: 100vh;
+}
+.slider .container{
+    display: flex;
 }
 .slider__gamb--img{
     width: 28.43rem;
@@ -17,12 +21,17 @@ left: 25%;
 }
 .slider__content--consist{
     position: absolute;
-    top: -12%;
+    top: -7%;
 left: 0%;
     width: 5.6rem;
     height: 5.6rem;
     background-color: $colorRed;
     border-radius: 5px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
 }
 .slider__gamb--text{
     @include fontOrangeGagalin;
@@ -35,8 +44,8 @@ left: 0%;
 }
 .slider__content--kkal {
     position: absolute;
-    top: 90%;
-left: 1%;
+    top: 54%;
+    left: 5%;
 }
 .slider__kkal--1200{
     @include fontOrangeGagalin;
@@ -121,23 +130,100 @@ margin-left: 4%;
 }
 .slider__linkblock--left {
     position: absolute;
-    top: 27.5%;
-    left: -2.5%;
+    top: 39.5%;
+    left: 16.5%;
 }
 .slider__linkblock--right {
     position: absolute;
-    top: 27.5%;
-    right: -2.5%;
+    top: 39.5%;
+    right: 11.5%;
 }
 
 .slider__popup{
     position: absolute;
-}
-.slider__popup--close{
-    
     display: none;
+    top: 0;
+    left: 5.6rem;
+    width: 16.8rem;
+    min-height: 20.75rem;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+    padding-top: 20%;
+    padding-left: 25%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /*&--close{
+        display: none;
+    }
+    &--open{
+        display: block;
+    }
+*/
+    @include tablet {
+       
+        width: 20.1rem;
+        
+     }
+     @include phone{
+        
+        width: 20.1rem;
+         
+     }
 }
-.slider__popup--open{
+.slider__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slider__item{
+    display: flex;
+    margin-bottom: 4.5%;
+    align-items: center;
+  
+}
+.slider__list--title,
+.slider__list--weight{
+    @include fontUbuntu;
+    color: $colorBlack;
+}
+.slider__list--svg {
+    margin-right: 8%;
+}
+.slider__list--title {
+    width: 53%;
+    font-weight: 500;
+    @include tablet {
+        width: 50%;
+     }
+     @include phone{
+        width: 50%;
+     }
+}
+.slider__popup--btn{
+    display: none;
     position: absolute;
-    display: none;
+   
+    
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-image: url(../img/btnsliderclose.png);
+    background-repeat: no-repeat;
+    outline: none;
+    @include tablet {
+        display: block;
+        top: 5%;
+    right: 5%;
+        
+     }
+     @include phone{
+         display: block;
+         top: 5%;
+         right: 5%;
+         
+     }
 }
