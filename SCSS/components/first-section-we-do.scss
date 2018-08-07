@@ -285,6 +285,12 @@ body {
     top: 14%;
     right: 15.5%;
     z-index: 30;
+    @include tablet {
+        display: none;
+    }
+    @include phone {
+        display: none;
+    }
 }
 
 .we-do__next-step {

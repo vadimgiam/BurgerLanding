@@ -7,6 +7,17 @@
 }
 .slider .container{
     display: flex;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 16%; 
+    }
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24%;
+    }
+
 }
 .slider__gamb--img{
     width: 28.43rem;
@@ -32,6 +43,12 @@ left: 0%;
     cursor: pointer;
     box-sizing: border-box;
     outline: none;
+    @include tablet {
+        top: -25%;
+    }
+    @include phone {
+        top: -39%;
+    }
 }
 .slider__gamb--text{
     @include fontOrangeGagalin;
@@ -45,7 +62,15 @@ left: 0%;
 .slider__content--kkal {
     position: absolute;
     top: 54%;
-    left: 5%;
+    left: 1%;
+    @include tablet {
+        top: 5%;
+        left: 75%;
+    }
+    @include phone {
+        top: 2%;
+        left: 86%;
+    }
 }
 .slider__kkal--1200{
     @include fontOrangeGagalin;
@@ -54,17 +79,19 @@ left: 0%;
     position: absolute;
 top: 32%;
 left: 23%;
+color: #fcd795;
 }
 .slider__kkal--kkal{
     @include fontOrangeGagalin;
     font-size: 0.875rem;
     line-height: 1.75rem;
     position: absolute;
+    color: #fcd795;
 top: 85%;
 left: 23%;
 }
 .slider__kkal--svg{
-    fill: $colorOrange;
+    fill: #fcd795;
     width: 3.75rem;
     height: 3.75rem;
 }
@@ -74,22 +101,51 @@ left: 23%;
     margin: 0;
     line-height: 4rem;
     margin-bottom: 11%;
+    @include tablet {
+        text-align: center;
+        margin-bottom: 8%;
+     }
+     @include phone {
+         font-size: 3.57rem;
+        text-align: center;
+        margin-bottom: 5%;
+     }
 }
 .slider__content--text{
     @include fontUbuntu;
 line-height: 1.5rem;
-margin-bottom: -1%;
+margin-bottom: -3%;
+@include tablet {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  @include phone{
+      font-size: 1rem;
+      margin-bottom: 8%;
+    text-align: center;
+  }
 }
 .slider__content--price{
     @include fontOrangeGagalin;
     line-height: 1.75;
     color: $colorRed;
+    @include phone {
+       font-size: 3.57rem;
+       line-height: 2rem;
+      }
+      
+    
 }
 .slider__content--rub{
     @include fontOrangeGagalin;
     font-size: 1.875rem;
      line-height: 1.75;
      color: $colorRed;
+     @include phone{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    
+    }
 }
 .slider__content--btn{
 @include btn;
@@ -103,6 +159,12 @@ margin-left: 4%;
 }
 .slider__content {
     display: flex;
+    @include tablet {
+        margin-bottom: 4%;
+     }
+     @include phone {
+        margin-bottom: 1%;
+     }
 }
 .slider__content--left,
 .slider__content--right{
@@ -110,7 +172,13 @@ margin-left: 4%;
     width: 45%;
 }
 .slider__content--right {
-    margin-left: 6.5%;
+    margin-left: 3.5%;
+    @include tablet {
+       width: 80%;
+    }
+    @include phone {
+        width: 85%;
+    }
 }
 .slider__link--left{
     display: block;
@@ -131,12 +199,28 @@ margin-left: 4%;
 .slider__linkblock--left {
     position: absolute;
     top: 39.5%;
-    left: 16.5%;
+    left: 14%;
+    @include tablet {
+        top: 54.5%;
+    left: 7%;
+     }
+     @include phone {
+        top: 45.5%;
+    left: 2%;
+     }
 }
 .slider__linkblock--right {
     position: absolute;
     top: 39.5%;
-    right: 11.5%;
+    right: 13.5%;
+    @include tablet {
+        top: 54.5%;
+        right: 4.5%;
+     }
+     @include phone {
+        top: 45.5%;
+        right: 2.5%;
+     }
 }
 
 .slider__popup{
@@ -199,11 +283,17 @@ margin-left: 4%;
         width: 50%;
      }
 }
-.slider__popup--btn{
+.slider__content--order{
+    @include tablet {
+       text-align: center;
+     }
+     @include phone{
+        text-align: center;
+     }
+}
+.slider__popup--btn {
     display: none;
     position: absolute;
-   
-    
     width: 20px;
     height: 20px;
     font-size: 0;
@@ -215,15 +305,11 @@ margin-left: 4%;
     background-repeat: no-repeat;
     outline: none;
     @include tablet {
-        display: block;
         top: 5%;
-    right: 5%;
-        
-     }
-     @include phone{
-         display: block;
-         top: 5%;
-         right: 5%;
-         
-     }
+        right: 5%;
+    }
+    @include phone {
+        top: 5%;
+        right: 5%;
+    }
 }
