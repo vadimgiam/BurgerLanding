@@ -4,3 +4,9 @@
     background-image: url(../img/bg7.jpg);
     min-height: 100vh;
 }
+.video__title{
+    margin: 0;
+    @include fontOrangeGagalin;
+    color: $colorBlack;
+    text-align: center;
+}

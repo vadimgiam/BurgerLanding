@@ -24,6 +24,7 @@ $colorRed:#e35028;
     display: block;
     position: relative;
     min-height: 650px;
+  
 }
 @mixin visuallyHidden {
     position: absolute;
@@ -71,10 +72,10 @@ $colorRed:#e35028;
     min-height: 650px;
     width: 100%;
     @include phone {
-        min-height: 800px;
+        min-height:650px;
     }
     @include tablet {
-        min-height: 1025px;
+        min-height: 650px;
     }
 }
 @mixin bgImageReview {
