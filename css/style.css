@@ -30,11 +30,11 @@ body {
   min-height: 650px; }
   @media screen and (max-width: 768px) {
     .container {
-      width: 720px;
+      max-width: 720px;
       min-height: 650px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .container {
-      width: 460px;
+      max-width: 460px;
       min-height: 650px; } }
 
 .we-do {
@@ -331,6 +331,9 @@ body {
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .nav-popup {
       display: none; } }
+
+.nav-popup--open {
+  display: block; }
 
 @media screen and (max-width: 768px) {
   .nav-popup--link {

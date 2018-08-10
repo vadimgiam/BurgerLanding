@@ -22,11 +22,11 @@ body {
 .container {
     @include container;
     @include tablet {
-        width: 720px;
+        max-width: 720px;
         min-height: 650px;
     }
     @include phone {
-        width: 460px;
+        max-width: 460px;
         min-height: 650px;
     }
 }
@@ -319,6 +319,12 @@ body {
         display: none;
     }
 }
+
+.nav-popup--open {
+    display: block;
+}
+
+
 
 .nav-popup--link {
     @include tablet {
