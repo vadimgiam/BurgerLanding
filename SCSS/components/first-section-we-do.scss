@@ -22,13 +22,15 @@ body {
 .container {
     @include container;
     @include tablet {
-        max-width: 720px;
+      // max-width: 720px;
+        
         min-height: 650px;
     }
     @include phone {
-        max-width: 460px;
+      //  max-width: 460px;
         min-height: 650px;
     }
+
 }
 
 .we-do {
@@ -228,6 +230,12 @@ body {
     &:first-child::before {
         display: none;
     }
+   @include beetweenTabletandDesc{
+    margin-right: 1rem;
+   }
+   @include beetweenTabletandDesc2{
+    margin-right: 0.6rem;
+   }
 }
 
 .header__nav--btn-wrap {

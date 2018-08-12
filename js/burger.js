@@ -1,6 +1,6 @@
-var navPopup = document.querySelectorAll(".nav-popup");
-var navButtonClose = document.querySelectorAll(".nav-popup__btn");
-var navLink = document.querySelectorAll(".header__nav--hamburger");
+var navPopup = document.querySelector(".nav-popup");
+var navButtonClose = document.querySelector(".nav-popup__btn");
+var navLink = document.querySelector(".header__nav--hamburger");
 
 navLink.addEventListener("click", function(evt){
     evt.preventDefault();

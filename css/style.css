@@ -22,6 +22,7 @@ body {
 .container {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -30,11 +31,9 @@ body {
   min-height: 650px; }
   @media screen and (max-width: 768px) {
     .container {
-      max-width: 720px;
       min-height: 650px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .container {
-      max-width: 460px;
       min-height: 650px; } }
 
 .we-do {
@@ -240,6 +239,12 @@ body {
     left: -19px; }
   .header__nav--item:first-child::before {
     display: none; }
+  @media screen and (max-width: 950px) {
+    .header__nav--item {
+      margin-right: 1rem; } }
+  @media screen and (max-width: 810px) {
+    .header__nav--item {
+      margin-right: 0.6rem; } }
 
 .header__nav--btn-wrap {
   margin-left: 22px;
@@ -958,7 +963,8 @@ body {
 
 .reviews {
   min-height: 100vh;
-  width: 100%; }
+  width: 100%;
+  min-height: 650px; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .reviews {
       height: 100vh; } }
