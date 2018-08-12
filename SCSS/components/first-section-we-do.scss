@@ -236,6 +236,7 @@ body {
    @include beetweenTabletandDesc2{
     margin-right: 0.6rem;
    }
+   
 }
 
 .header__nav--btn-wrap {
@@ -244,9 +245,16 @@ body {
     @include tablet {
         margin-left: 66%;
     }
+    @include beetweenBeetweenPhoneandTablet{
+        margin-left: 55%
+    }
     @include phone {
         margin-left: 44%;
     }
+    @include beetweenBeetweenPhoneandTablet2{
+        margin-left: 32%;
+    }
+   
 }
 
 .we-do__content {

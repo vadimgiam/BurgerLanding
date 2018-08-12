@@ -3,6 +3,7 @@
     line-height: 4rem;
     display: flex;
     justify-content: center;
+    text-align: center;
     @include phone {
         text-align: center;
         font-size: 3.57rem;
@@ -93,6 +94,7 @@ cursor: pointer;
     background-color: rgba(255, 255, 255, 1);
     @include phone {
         top: 19px;
+        
     }
 }
 .form__block input[type="radio"]:checked+.radio-indicator::before {
@@ -114,7 +116,7 @@ cursor: pointer;
     background-color: rgba(255, 255, 255, 1);
     @include phone {
         top: 3px;
-        left: 176px;
+        left: 31%;
     }
 }
 .form__block input[type="checkbox"]:checked+.checkbox-indicator::before,
@@ -145,6 +147,12 @@ cursor: pointer;
 .form__left,
 .form__right{
     width: 470px;
+    @include tablet{
+        width: 95%;
+    }
+    @include phone{
+        width: 95%;
+    }
 }
 .form__right {
     margin-left: 6%;
