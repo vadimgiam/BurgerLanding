@@ -170,7 +170,7 @@ min-height: 100%;
 .team__block--content {
     margin-left: 4%;
     margin-top: -4%;
-    width: 43%;
+    min-width: 43%;
    
      @include tablet {
         display: flex;

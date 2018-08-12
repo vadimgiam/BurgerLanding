@@ -173,23 +173,31 @@ margin-left: 4%;
 .slider__content--left,
 .slider__content--right{
     position: relative;
-    width: 45%;
+   
 }
 .slider__content--left{
+    width: 53%;
     @include tablet {
         width: 60%;
         margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
      }
      @include phone {
         width: 89%;
         margin-bottom: -1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
      }
 }
 
 .slider__content--right {
     margin-left: 6.5%;
+    width: 50%;
     @include tablet {
-       width: 80%;
+        width: 75%;
        margin-left: 0;
     }
     @include phone {
@@ -216,8 +224,8 @@ margin-left: 4%;
 }
 .slider__linkblock--left {
     position: absolute;
-    top: 39.5%;
-    left: 14%;
+    top: 27.5%;
+    left: -2%;
     @include tablet {
         top: 49%;
     left: 4%;
@@ -229,8 +237,8 @@ margin-left: 4%;
 }
 .slider__linkblock--right {
     position: absolute;
-    top: 39.5%;
-    right: 13.5%;
+    top: 27.5%;
+    right: -2.5%;
     @include tablet {
         top: 49%;
         right: 4.5%;
