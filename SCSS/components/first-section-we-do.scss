@@ -77,7 +77,7 @@ body {
     @include phone {
         display: block;
         top: 5.5%;
-    right: 5.5%;
+        right: 7.5%;
 
     }
     &::before{
@@ -230,12 +230,7 @@ body {
     &:first-child::before {
         display: none;
     }
-   @include beetweenTabletandDesc{
-    margin-right: 1rem;
-   }
-   @include beetweenTabletandDesc2{
-    margin-right: 0.6rem;
-   }
+   
    
 }
 
@@ -243,17 +238,15 @@ body {
     margin-left: 22px;
     padding-top: 34px;
     @include tablet {
-        margin-left: 66%;
+        margin-left: auto;
+        margin-right: 6%;
     }
-    @include beetweenBeetweenPhoneandTablet{
-        margin-left: 55%
-    }
+
     @include phone {
-        margin-left: 44%;
+        margin-left: auto;
+        margin-right: 14%;
     }
-    @include beetweenBeetweenPhoneandTablet2{
-        margin-left: 32%;
-    }
+
    
 }
 
