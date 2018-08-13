@@ -44,7 +44,6 @@ body {
   width: 100%;
   background-color: #111114;
   background-image: url(../img/bg1.jpg);
-  margin-bottom: -3.5%;
   min-height: 100vh; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .we-do {
@@ -344,6 +343,12 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 8%; }
+  @media screen and (max-width: 768px) {
+    .we-do__next-step {
+      padding-bottom: 4%; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .we-do__next-step {
+      padding-bottom: 4%; } }
 
 /*Сетки close*/
 /*popup nav*/
@@ -885,7 +890,7 @@ body {
 .slider__linkblock--left {
   position: absolute;
   top: 27.5%;
-  left: -2%; }
+  right: 98%; }
   @media screen and (max-width: 768px) {
     .slider__linkblock--left {
       top: 49%;
@@ -898,7 +903,7 @@ body {
 .slider__linkblock--right {
   position: absolute;
   top: 27.5%;
-  right: -2.5%; }
+  left: 97.5%; }
   @media screen and (max-width: 768px) {
     .slider__linkblock--right {
       top: 49%;
@@ -1317,7 +1322,10 @@ body {
 .team__member.team__member--active + .team__block--open {
   height: 105px;
   overflow: visible;
-  margin-bottom: 6%; }
+  margin-bottom: 6%;
+  -webkit-transition: height .5s ease-out, margin-bottom .5s ease-out;
+  -o-transition: height .5s ease-out, margin-bottom .5s ease-out;
+  transition: height .5s ease-out, margin-bottom .5s ease-out; }
   @media screen and (max-width: 768px) {
     .team__member.team__member--active + .team__block--open {
       margin-bottom: 28%; } }
@@ -1567,20 +1575,26 @@ body {
 .menu__block {
   background-color: rgba(89, 89, 89, 0.93); }
 
-.menu__block--open {
+.menu__block--close {
+  width: 0;
+  overflow: hidden; }
+
+.menu__item.menu__item--active > .menu__block--open {
   width: 33.75rem;
-  overflow: visible; }
+  overflow: visible;
+  -webkit-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out; }
   @media screen and (max-width: 768px) {
-    .menu__block--open {
+    .menu__item.menu__item--active > .menu__block--open {
       width: 15.75rem; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    .menu__block--open {
+    .menu__item.menu__item--active > .menu__block--open {
       width: 10.75rem; } }
 
-/*.menu__block--close{
-    width: 0;
-    overflow: hidden;
-}*/
+.menu__item.menu__item--active .menu__item--yellow {
+  color: #f9b43b; }
+
 .menu__text {
   text-decoration: none;
   font-family: Ubuntu, Arial, sans-serif;

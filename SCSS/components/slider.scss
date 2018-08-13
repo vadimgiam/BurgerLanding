@@ -225,7 +225,7 @@ margin-left: 4%;
 .slider__linkblock--left {
     position: absolute;
     top: 27.5%;
-    left: -2%;
+    right: 98%;
     @include tablet {
         top: 49%;
     left: 4%;
@@ -238,7 +238,7 @@ margin-left: 4%;
 .slider__linkblock--right {
     position: absolute;
     top: 27.5%;
-    right: -2.5%;
+    left: 97.5%;
     @include tablet {
         top: 49%;
         right: 4.5%;

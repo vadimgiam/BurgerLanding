@@ -58,20 +58,26 @@
   
 }
 
-.menu__block--open{
+.menu__block--close{
+    width: 0;
+    overflow: hidden;
+   
+}
+.menu__item.menu__item--active > .menu__block--open{
+    
     width: 33.75rem;
     overflow: visible;
-    @include tablet {
+    transition: width 1s ease-in-out;
+     @include tablet {
        width: 15.75rem;
     }
     @include phone {
         width: 10.75rem;
     }
 }
-/*.menu__block--close{
-    width: 0;
-    overflow: hidden;
-}*/
+.menu__item.menu__item--active  .menu__item--yellow {
+    color: #f9b43b;
+}
 .menu__text{
     @include fontUbuntu ;
     font-size: 0.8rem;

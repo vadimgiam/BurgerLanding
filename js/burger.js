@@ -1,5 +1,6 @@
 'use strict';
 
+//Попап навигационное меню
 
 var navPopup = document.querySelector(".nav-popup");
 var navButtonClose = document.querySelector(".nav-popup__btn");
@@ -100,3 +101,46 @@ for (a = 0; a < openCloseBtn.length; a++) {
         }
     })
 }
+
+
+//Аккордеон Меню
+var sectionMenu = document.querySelector(".menu");
+var menuOpenClose = document.querySelectorAll(".menu__item");
+var menuTextBtnColor = document.querySelectorAll(".menu__item--title");
+
+sectionMenu.addEventListener('click', function(e) {
+    for (let m = 0; m < menuOpenClose.length; m++) {
+        menuOpenClose[m].classList.remove('menu__item--active');
+        for (let y = 0; y < menuTextBtnColor.length; y++){
+            menuTextBtnColor[y].classList.remove('menu__item--yellow');
+        }
+    }
+  })
+  for (let m = 0; m < menuOpenClose.length; m++) {
+    menuOpenClose[m].addEventListener('click', function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      if (menuOpenClose[m].classList.contains('menu__item--active')) {
+        menuOpenClose[m].classList.remove('menu__item--active');
+
+        for (let y = 0; y < menuTextBtnColor.length; y++){
+            menuTextBtnColor[y].classList.remove('menu__item--yellow');
+        }
+      } else {
+        for (let m = 0; m < menuOpenClose.length; m++) {
+            menuOpenClose[m].classList.remove('menu__item--active'); 
+            for (let y = 0; y < menuTextBtnColor.length; y++){
+                menuTextBtnColor[y].classList.remove('menu__item--yellow');
+            }
+          }
+          for (let y = 0; y < menuTextBtnColor.length; y++){
+            menuTextBtnColor[y].classList.add('menu__item--yellow');
+        }
+        menuOpenClose[m].classList.add('menu__item--active');
+        
+    }
+  })
+}
+
+// Слайдер
+  
