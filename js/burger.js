@@ -7,6 +7,7 @@ var op = 0.1;
 
 navLink.addEventListener("click", function(evt){
     evt.preventDefault();
+    navPopup.style.opacity = 0;
     navPopup.classList.add("nav-popup--open");
 setTimeout(function foo(){
 if (op < 1) {
@@ -21,9 +22,9 @@ navButtonClose.addEventListener("click", function(evt){
     evt.preventDefault();
     
     setTimeout(function fooClose(){
-        if (op >= 1) {
+        if (op >= 0) {
             op -= 0.1;
-            navPopup.style.opacity = 0;
+            navPopup.style.opacity = op;
             setTimeout(fooClose, 100);
         }else {
             navPopup.classList.remove("nav-popup--open");
@@ -33,12 +34,14 @@ navButtonClose.addEventListener("click", function(evt){
 document.addEventListener("keydown", function(evt){
     if(evt.keyCode === 27){
         if (navPopup.classList.contains("nav-popup--open")) {
-            navPopup.classList.remove("nav-popup--open");
-            setTimeout(function foo(){
-                if (op >= 1) {
+            
+            setTimeout(function fooClose(){
+                if (op >= 0) {
                     op -= 0.1;
                     navPopup.style.opacity = op;
-                    setTimeout(foo, 100);
+                    setTimeout(fooClose, 100);
+                }else {
+                    navPopup.classList.remove("nav-popup--open");
                 }
                 }, 100);
         }   
@@ -47,12 +50,14 @@ document.addEventListener("keydown", function(evt){
 
 for (var i = 0; i < navItemLink.length; i++){
     navItemLink[i].addEventListener("click", function(evt){
-        navPopup.classList.remove("nav-popup--open");
-        setTimeout(function foo(){
-            if (op >= 1) {
+        
+        setTimeout(function fooClose(){
+            if (op >= 0) {
                 op -= 0.1;
                 navPopup.style.opacity = op;
-                setTimeout(foo, 100);
+                setTimeout(fooClose, 100);
+            }else {
+                navPopup.classList.remove("nav-popup--open");
             }
             }, 100);
     });
