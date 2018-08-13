@@ -1283,40 +1283,46 @@ body {
       -ms-flex-align: center;
       align-items: center; } }
 
-/*.team__block--close{
-    height: 0;
-    overflow: hidden;
-    margin-bottom:0;
-   
-}*/
-.team__block--open {
-  height: 105px;
-  overflow: visible;
-  margin-bottom: 6%;
+.team__block--close {
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
   margin-left: 1%;
   margin-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   @media screen and (max-width: 768px) {
-    .team__block--open {
+    .team__block--close {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
+      align-items: center; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .team__block--close {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+
+.team__member.team__member--active + .team__block--open {
+  height: 105px;
+  overflow: visible;
+  margin-bottom: 6%; }
+  @media screen and (max-width: 768px) {
+    .team__member.team__member--active + .team__block--open {
       margin-bottom: 28%; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    .team__block--open {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+    .team__member.team__member--active + .team__block--open {
       margin-bottom: 26%; } }
 
 .team__member {
@@ -1352,6 +1358,9 @@ body {
     .team__member {
       font-size: 1.5rem;
       line-height: 1.8rem; } }
+
+.team__member--yellow {
+  color: #f9b43b; }
 
 .team__block--image {
   border-radius: 50%;

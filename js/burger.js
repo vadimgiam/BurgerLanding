@@ -1,3 +1,6 @@
+'use strict';
+
+
 var navPopup = document.querySelector(".nav-popup");
 var navButtonClose = document.querySelector(".nav-popup__btn");
 var navLink = document.querySelector(".header__nav--hamburger");
@@ -62,4 +65,38 @@ for (var i = 0; i < navItemLink.length; i++){
             }, 100);
     });
     
+}
+
+
+//Аккордеон Команда
+
+/*
+var openCloseBtn = document.querySelectorAll(".team__member");
+var teamMemberAkk = document.querySelectorAll(".team__block");
+
+for (var b = 0; b < openCloseBtn.length; b++){
+    openCloseBtn[b].addEventListener("click", function(evt){
+        evt.preventDefault();
+        teamMemberAkk.classList.add("team__block--open");
+        teamMemberAkk.classList.remove("team__block--close");
+    });
+}
+*/
+
+var openCloseBtn = document.querySelectorAll('.team__member');
+
+var a;
+for (a = 0; a < openCloseBtn.length; a++) {
+    openCloseBtn[a].addEventListener('click', function() {
+        if(!(this).classList.contains('team__member--active')) {
+            for(a = 0; a < openCloseBtn.length; a++) {
+                openCloseBtn[a].classList.remove('team__member--active');
+            }
+            this.classList.add('team__member--active');
+            this.classList.add('team__member--yellow');
+        } else if (this.classList.contains('team__member--active')) {
+            this.classList.remove('team__member--active');
+            this.classList.remove('team__member--yellow');
+        }
+    })
 }
