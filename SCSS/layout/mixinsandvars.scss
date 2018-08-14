@@ -115,6 +115,14 @@ $colorRed:#e35028;
         @content;
     }
 }
-
-
+@mixin beetweenphoneandMin {
+    @media screen and  (max-width:416px) {
+        @content;
+    }
+}
+@mixin beetweenphoneandMin2 {
+    @media screen and  (max-width:331px) {
+        @content;
+    }
+}
 /*media close*/

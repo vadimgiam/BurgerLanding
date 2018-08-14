@@ -4,6 +4,9 @@ html {
     @include phone {
         font-size: 14px;
     }
+    @include beetweenphoneandMin  {
+        font-size: 11px;
+    }
 }
 
 body {
@@ -30,7 +33,10 @@ body {
       //  max-width: 460px;
         min-height: 650px;
     }
-
+    @include beetweenphoneandMin2 {
+        
+          min-width: 0;
+      }
 }
 
 .we-do {
@@ -74,12 +80,18 @@ body {
         top: 5%;
         right: 5.5%;
     }
+
     @include phone {
         display: block;
         top: 5.5%;
         right: 7.5%;
-
     }
+    @include beetweenphoneandMin {
+        
+        top: 7%;
+        right: 5.5%;
+    }
+
     &::before{
         content: "";
         position: absolute;
