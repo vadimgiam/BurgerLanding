@@ -30,8 +30,8 @@ left: 25%;
 }
 .slider__content--consist{
     position: absolute;
-    top: -7%;
-left: 0%;
+    top: -12%;
+    left: 8%;
     width: 5.6rem;
     height: 5.6rem;
     background-color: $colorRed;
@@ -60,8 +60,8 @@ left: 0%;
 }
 .slider__content--kkal {
     position: absolute;
-    top: 54%;
-    left: 1%;
+    top: 91%;
+    left: 8%;
     @include tablet {
         top: -24%;
         
@@ -159,6 +159,7 @@ margin-left: 4%;
 }
 .slider__content {
     display: flex;
+    align-items: center;
     @include tablet {
         flex-direction: column;
         align-items: center;
@@ -235,8 +236,8 @@ margin-left: 4%;
 }
 .slider__linkblock--left {
     position: absolute;
-    top: 27.5%;
-    right: 98%;
+    top: 47.5%;
+    right: 97%;
     @include tablet {
         top: 49%;
     left: 4%;
@@ -248,7 +249,7 @@ margin-left: 4%;
 }
 .slider__linkblock--right {
     position: absolute;
-    top: 27.5%;
+    top: 47.5%;
     left: 97.5%;
     @include tablet {
         top: 49%;
@@ -266,8 +267,8 @@ margin-left: 4%;
 .slider__popup{
     position: absolute;
     display: none;
-    top:-2.8rem;
-    left: 5.6rem;
+    top: -2.4rem;
+    left: 7.8rem;
     width: 16.8rem;
     min-height: 20.75rem;
     background-color: rgba(255,255,255,0.9);
