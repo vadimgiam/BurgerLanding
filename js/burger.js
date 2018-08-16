@@ -142,5 +142,56 @@ sectionMenu.addEventListener('click', function(e) {
   })
 }
 
-// Слайдер
-  
+// Форма
+
+var myForm = document.querySelector("form");
+var sendButton = document.querySelector(".form__submit");
+
+
+sendButton.addEventListener("click", function(event){
+event.preventDefault();
+if(validateForm(myForm)){
+    
+const data = {
+   name: myForm.elements.name.value,
+   phone:myForm.elements.phone.value,
+   comment: myForm.elements.comment.value
+};
+
+const xhr = new XMLHttpRequest();
+xhr.responseType = "join";
+xhr.open("POST","https://webdev-api.loftschool.com/sendmail");
+xhr.send(JSON.stringify(data));
+xhr("load", function(){
+if(xhr.response.status){
+    console.log("Данные отправлены");
+}
+});
+}
+
+});
+
+function validateForm(form) {
+    let valid = true;
+
+    if(!validateField(form.elements.name)){
+        valid = false;
+    }
+    if(!validateField(form.elements.phone)){
+        valid = false;
+    }
+    if(!validateField(form.elements.comment)){
+        valid = false;
+    }
+    return valid;
+}
+
+function validateField(field){
+    if(!field.checkValidity()){
+        field.form.element.textContent = field.validationMessage;
+        return false;
+    } else{
+        field.form.element.textContent = "";
+        return true;
+    }
+}
