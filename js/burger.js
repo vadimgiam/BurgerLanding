@@ -144,7 +144,7 @@ sectionMenu.addEventListener('click', function(e) {
 
 // Форма
 
-var myForm = document.querySelector("form");
+var myForm = document.querySelector(".form");
 var sendButton = document.querySelector(".form__submit");
 
 
@@ -195,3 +195,32 @@ function validateField(field){
         return true;
     }
 }
+
+
+//Popup отзывы
+var reviewBtnOpen = document.querySelector(".reviews__hover--btn");
+var successOverlay = document.querySelector(".reviews__popup");
+var reviewsBtnClose = document.querySelector(".cont__btn");
+
+reviewBtnOpen.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    successOverlay.classList.add("reviews__popup--open");
+
+});
+
+reviewsBtnClose.addEventListener("click", function(e){
+    e.preventDefault();
+    successOverlay.classList.remove("reviews__popup--open");
+      
+});
+document.addEventListener("keydown", function(e){
+    if(e.keyCode === 27){
+        if (successOverlay.classList.contains("reviews__popup--open")) {
+            
+            
+            successOverlay.classList.remove("reviews__popup--open");
+                
+        }   
+    }
+});
