@@ -89,9 +89,11 @@ var openCloseBtn = document.querySelectorAll('.team__member');
 var a;
 for (a = 0; a < openCloseBtn.length; a++) {
     openCloseBtn[a].addEventListener('click', function() {
+        
         if(!(this).classList.contains('team__member--active')) {
-            for(a = 0; a < openCloseBtn.length; a++) {
-                openCloseBtn[a].classList.remove('team__member--active');
+            for(var b = 0; b < openCloseBtn.length; b++) {
+                openCloseBtn[b].classList.remove('team__member--yellow');
+                openCloseBtn[b].classList.remove('team__member--active');
             }
             this.classList.add('team__member--active');
             this.classList.add('team__member--yellow');
@@ -188,10 +190,10 @@ function validateForm(form) {
 
 function validateField(field){
     if(!field.checkValidity()){
-        field.form.element.textContent = field.validationMessage;
+        field.form.nextElementSibling.textContent = field.validationMessage;
         return false;
     } else{
-        field.form.element.textContent = "";
+        field.form.nextElementSibling.textContent = "";
         return true;
     }
 }

@@ -55,7 +55,7 @@
 .menu__block{
    
    background-color: rgba(89,89,89,0.93);
-  
+   transition: width 1s ease-in-out;
 }
 
 .menu__block--close{
@@ -67,7 +67,7 @@
     
     width: 33.75rem;
     overflow: visible;
-    transition: width 1s ease-in-out;
+    
      @include tablet {
        width: 15.75rem;
     }

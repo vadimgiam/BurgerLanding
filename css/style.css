@@ -1682,7 +1682,10 @@ body {
   height: 100vh; }
 
 .menu__block {
-  background-color: rgba(89, 89, 89, 0.93); }
+  background-color: rgba(89, 89, 89, 0.93);
+  -webkit-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out; }
 
 .menu__block--close {
   width: 0;
@@ -1690,10 +1693,7 @@ body {
 
 .menu__item.menu__item--active > .menu__block--open {
   width: 33.75rem;
-  overflow: visible;
-  -webkit-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out; }
+  overflow: visible; }
   @media screen and (max-width: 768px) {
     .menu__item.menu__item--active > .menu__block--open {
       width: 15.75rem; } }
