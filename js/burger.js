@@ -254,3 +254,39 @@ document.addEventListener("keydown", function(e){
         }   
     }
 });
+
+
+//слайдер
+
+const left = document.querySelector(".slider__link--left");
+const right = document.querySelector(".slider__link--right");
+const items = document.querySelector(".slider__list");
+const computed = getComputedStyle(items);
+
+right.addEventListener("click", function(event) {
+    event.preventDefault();
+    let currentRight = parseInt(computed.right);
+  
+    if (!currentRight) {
+      currentRight = 0;
+    }
+    
+    if (currentRight < 200) {
+      items.style.right = currentRight + 100 + "%";
+    }else{
+        items.style.right = 0;
+    }
+  });
+
+  left.addEventListener("click", function(event) {
+    event.preventDefault();
+    let currentRight = parseInt(computed.right);
+  
+    if (!currentRight) {
+      currentRight = 0;
+    }
+  
+    if (currentRight > 0) {
+      items.style.right = currentRight - 100 + "%";
+    }
+  });
