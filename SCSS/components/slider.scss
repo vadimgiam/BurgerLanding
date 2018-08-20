@@ -357,3 +357,16 @@ margin-left: 4%;
         right: 5%;
     }
 }
+
+.slider__wrap{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__list{
+    display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+

@@ -50,7 +50,7 @@ body {
   width: 100%;
   background-color: #111114;
   background-image: url(../img/bg1.jpg);
-  height: 100vh; }
+  min-height: 100vh; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .we-do {
       min-height: 650px; } }
@@ -1042,6 +1042,22 @@ body {
       display: block;
       top: 5%;
       right: 5%; } }
+
+.slider__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden; }
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .reviews {
   height: 100vh;
