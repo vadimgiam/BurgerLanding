@@ -148,7 +148,8 @@ sectionMenu.addEventListener('click', function(e) {
 
 var myForm = document.querySelector(".form");
 var sendButton = document.querySelector(".form__submit");
-
+var closeOrderPopup = document.querySelector(".order__cont--btn");
+var orderPopup = document.querySelector(".order__popup");
 
 sendButton.addEventListener("click", function(event){
 event.preventDefault();
@@ -165,8 +166,26 @@ xhr.responseType = "join";
 xhr.open("POST","https://webdev-api.loftschool.com/sendmail");
 xhr.send(JSON.stringify(data));
 xhr("load", function(){
-if(xhr.response.status){
-    console.log("Данные отправлены");
+if(xhr.response.status <= 400){
+    sendButton.addEventListener("click", function(evt){
+        evt.preventDefault();
+        orderPopup.classList.add("order__popup--open");
+    });
+
+    closeOrderPopup.addEventListener("click", function(evt){
+        evt.preventDefault();
+        orderPopup.classList.remove("order__popup--open");
+            
+    });
+    document.addEventListener("keydown", function(evt){
+        if(evt.keyCode === 27){
+            if (orderPopup.classList.contains("order__popup--open")) {
+         
+                orderPopup.classList.remove("order__popup--open");
+                 
+            }   
+        }
+    });
 }
 });
 }
@@ -187,8 +206,11 @@ function validateForm(form) {
     }
     return valid;
 }
-
-function validateField(field){
+function validateField(field) {
+    field.nextElementSibling.textContent = field.validationMessage;
+    return field.checkValidity();
+ }
+/*function validateField(field){
     if(!field.checkValidity()){
         field.form.nextElementSibling.textContent = field.validationMessage;
         return false;
@@ -196,7 +218,7 @@ function validateField(field){
         field.form.nextElementSibling.textContent = "";
         return true;
     }
-}
+}*/
 
 
 //Popup отзывы
