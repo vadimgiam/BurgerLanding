@@ -198,22 +198,28 @@ function validateField(field){
 
 
 //Popup отзывы
-var reviewBtnOpen = document.querySelector(".reviews__hover--btn");
+var reviewBtnOpen = document.querySelectorAll(".reviews__hover--btn");
 var successOverlay = document.querySelector(".reviews__popup");
 var reviewsBtnClose = document.querySelector(".cont__btn");
 
-reviewBtnOpen.addEventListener("click", function(e){
-    e.preventDefault();
+
+for(let r = 0; r < reviewBtnOpen.length; r++){
+    reviewBtnOpen[r].addEventListener("click", function(e){
     
-    successOverlay.classList.add("reviews__popup--open");
+        e.preventDefault();
+        successOverlay.classList.add("reviews__popup--open");
+    
+    });
+}
 
-});
 
-reviewsBtnClose.addEventListener("click", function(e){
-    e.preventDefault();
-    successOverlay.classList.remove("reviews__popup--open");
-      
-});
+    reviewsBtnClose.addEventListener("click", function(e){
+        e.preventDefault();
+        successOverlay.classList.remove("reviews__popup--open");
+          
+    });
+
+
 document.addEventListener("keydown", function(e){
     if(e.keyCode === 27){
         if (successOverlay.classList.contains("reviews__popup--open")) {
