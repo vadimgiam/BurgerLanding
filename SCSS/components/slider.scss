@@ -159,9 +159,12 @@ margin-left: 4%;
 }
 .slider__content {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     min-width: 100%;
     position: absolute;
+    top:0;
+    left: 0;
     @include tablet {
         flex-direction: column;
         align-items: center;
