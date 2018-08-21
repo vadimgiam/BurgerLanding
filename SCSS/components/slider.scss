@@ -160,6 +160,8 @@ margin-left: 4%;
 .slider__content {
     display: flex;
     align-items: center;
+    min-width: 100%;
+    position: absolute;
     @include tablet {
         flex-direction: column;
         align-items: center;
@@ -369,5 +371,6 @@ margin-left: 4%;
   overflow: hidden;
   align-items: center;
   will-change: right;
+  width: 100%;
 }
 

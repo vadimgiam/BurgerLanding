@@ -165,7 +165,7 @@ const xhr = new XMLHttpRequest();
 xhr.responseType = "join";
 xhr.open("POST","https://webdev-api.loftschool.com/sendmail");
 xhr.send(JSON.stringify(data));
-xhr("load", function(){
+xhr.addEventListener("load", function(){
 if(xhr.response.status <= 400){
     sendButton.addEventListener("click", function(evt){
         evt.preventDefault();
