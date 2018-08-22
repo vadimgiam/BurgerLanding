@@ -162,7 +162,7 @@ const data = {
 };
 
 const xhr = new XMLHttpRequest();
-xhr.responseType = "join";
+xhr.responseType = "json";
 xhr.open("POST","https://webdev-api.loftschool.com/sendmail");
 xhr.send(JSON.stringify(data));
 xhr.addEventListener("load", function(){

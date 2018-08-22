@@ -162,9 +162,9 @@ margin-left: 4%;
     flex-wrap: nowrap;
     align-items: center;
     min-width: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
+    //position: absolute;
+   // top:0;
+    //left: 0;
     @include tablet {
         flex-direction: column;
         align-items: center;
@@ -364,6 +364,7 @@ margin-left: 4%;
 }
 
 .slider__wrap{
+    position: relative;
     display: flex;
     width: 100%;
     overflow: hidden;
@@ -371,9 +372,9 @@ margin-left: 4%;
 
 .slider__list{
     display: flex;
-  overflow: hidden;
+  position: absolute;
   align-items: center;
   will-change: right;
-  width: 100%;
+  
 }
 

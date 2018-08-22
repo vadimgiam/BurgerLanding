@@ -819,10 +819,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  min-width: 100%; }
   @media screen and (max-width: 768px) {
     .slider__content {
       -webkit-box-orient: vertical;
@@ -1050,6 +1047,7 @@ body {
       right: 5%; } }
 
 .slider__wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1060,12 +1058,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  position: absolute;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  will-change: right;
-  width: 100%; }
+  will-change: right; }
 
 .reviews {
   height: 100vh;
