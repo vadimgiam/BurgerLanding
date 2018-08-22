@@ -166,7 +166,7 @@ xhr.responseType = "join";
 xhr.open("POST","https://webdev-api.loftschool.com/sendmail");
 xhr.send(JSON.stringify(data));
 xhr.addEventListener("load", function(){
-if(xhr.response.status <= 400){
+if(xhr.response.response.status <= 400){
     sendButton.addEventListener("click", function(evt){
         evt.preventDefault();
         orderPopup.classList.add("order__popup--open");
