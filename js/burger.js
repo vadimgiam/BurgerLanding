@@ -222,7 +222,8 @@ function validateField(field) {
 
 
 //Popup отзывы
-var reviewBtnOpen = document.querySelectorAll(".reviews__hover--btn");
+
+/*var reviewBtnOpen = document.querySelectorAll(".reviews__hover--btn");
 var successOverlay = document.querySelector(".reviews__popup");
 var reviewsBtnClose = document.querySelector(".cont__btn");
 
@@ -254,6 +255,48 @@ document.addEventListener("keydown", function(e){
         }   
     }
 });
+*/
+
+function commentsPopup () {
+    var reviewBtnOpen = document.querySelectorAll(".reviews__hover--btn");
+    var successOverlay = document.querySelector(".reviews__popup");
+    var reviewsBtnClose = document.querySelector(".cont__btn");
+
+    var reviewPopupName = document.querySelector(".cont__title");
+    var reviewPopupComment = document.querySelector(".cont__text");
+
+for (let r=0; r < reviewBtnOpen.length; r++){
+    reviewBtnOpen[r].addEventListener("click", function(e){
+        e.preventDefault();
+        var z = this;
+        
+        var thisParent = z.parentNode;
+
+const name = thisParent.querySelector(".reviews__hover--title");
+const comment =thisParent.querySelector(".reviews__hover--text");
+
+reviewPopupName.textContent = name.innerHTML;
+reviewPopupComment.textContent = comment.innerHTML;
+        successOverlay.style.display = "block";
+    });
+}
+reviewsBtnClose.addEventListener("click", function(e){
+    e.preventDefault();
+    successOverlay.style.display = "none";
+});
+document.addEventListener("keydown", function(e){
+    if(e.keyCode === 27){
+        if (successOverlay.style.display = "block") {
+            successOverlay.style.display = "none";  
+        }   
+    }
+});
+
+
+
+}
+
+commentsPopup ();
 
 
 //слайдер
