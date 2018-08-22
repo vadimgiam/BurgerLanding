@@ -333,3 +333,74 @@ right.addEventListener("click", function(event) {
       items.style.right = currentRight - 100 + "%";
     }
   });
+
+// MAP
+ymaps.ready(init);
+
+var placemarks = [
+    {
+        latitude: 59.9712,
+        longitude: 30.3140,
+        hintContent: 'ул. профессора Попова,д.23',
+        balloonContent: 'ул. профессора Попова,д.23'
+    },
+    {
+        latitude: 59.9494,
+        longitude: 30.3902,
+        hintContent: 'ул. Лафонская,д.2',
+        balloonContent: 'ул. Лафонская,д.2'
+    },
+    {
+        latitude: 59.8912,
+        longitude: 30.3104,
+        hintContent: 'ул. Старообрядчемкая,д.1',
+        balloonContent: 'ул. Старообрядчемкая,д.1'
+    },
+    {
+        latitude: 59.9150,
+        longitude: 30.4975,
+        hintContent: 'пр. Солидарности,д.21',
+        balloonContent: 'пр. Солидарности,д.21'
+    }
+   
+];
+var geoObjects = [];
+
+function init(){ 
+    var myMap = new ymaps.Map("map", {
+       center: [59.94, 30.32],
+        zoom: 12,
+        controls: ["zoomControl"],
+        behaviors: ['drag']
+    }); 
+    
+  
+    for (var i = 0; i < placemarks.length; i++) {
+		geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude], {
+			hintContent: placemarks[i].hintContent,
+			balloonContent: placemarks[i].balloonContent
+        }, 
+        {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/icons/iconmap.svg',
+        iconImageSize: [46, 57],
+       iconImageOffset: [-23, -57]
+        
+    });
+}
+    
+var clusterer = new ymaps.Clusterer({
+    clusterIcons: [{
+     href: 'img/burgerfirst.png',
+     size: [100, 100],
+     offsset: [-50, -50]
+ }],
+     clusterIconContentLayout: null
+
+
+ });
+ 
+ map.geoObjects.add(clusterer);
+ clusterer.add(geoObjects);
+
+}

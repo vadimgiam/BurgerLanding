@@ -1847,7 +1847,7 @@ body {
   background-color: #2f3234;
   background-image: url(../img/bg3.jpg);
   padding-top: 9%;
-  height: 100vh; }
+  min-height: 100vh; }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .order {
       min-height: 650px; } }
