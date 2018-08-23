@@ -210,6 +210,58 @@ function validateField(field) {
     field.nextElementSibling.textContent = field.validationMessage;
     return field.checkValidity();
  }
+
+ function validationFormInput (){
+const yourName = document.querySelector('#name');
+const yourPhone = document.querySelector('#phone');
+const yourStreet = document.querySelector('#street');
+
+yourPhone.addEventListener('keydown', function (event) {
+    let isDigit = false;
+    let isControl = false;
+    let isDash = false;
+
+    if (event.key >= 0 || event.key >= 9) {
+        isDigit = true;
+    }
+
+    if (event.key == "-") {
+        isDash = true;
+    }
+
+    if (event.key == 'Backspace' || event.key == 'Delete' || event.key == 'ArrowRight' || event.key == 'ArrowLeft' ) {
+        isControl = true;
+    }
+
+    if (isDigit == false && isDash == false && isControl == false){
+        event.preventDefault();
+    }
+});
+
+yourName.addEventListener("keydown", letters);
+yourStreet.addEventListener("keydown", letters);
+
+function letters(event){
+    let isDigit = false;
+    let isControl = false;
+    let isDash = false;
+    if (event.key == 'Backspace' || event.key == 'Delete' || event.key == 'ArrowRight' || event.key == 'ArrowLeft') {
+        isControl = true;
+    }
+    if (event.key == "-" || event.key == "." || event.key == ",") {
+        isDash = true;
+    }
+    if (event.key == 'й' || event.key == 'ц' || event.key == 'у' || event.key == 'й' || event.key == 'к' || event.key == 'е' || event.key == 'н' || event.key == 'й' || event.key == 'г' || event.key == 'ш' || event.key == 'щ' || event.key == 'й' || event.key == 'з' || event.key == 'х' || event.key == 'ъ' || event.key == 'й' || event.key == 'ф' || event.key == 'ы' || event.key == 'в' || event.key == 'й' || event.key == 'а' || event.key == 'п' || event.key == 'р' || event.key == 'й' || event.key == 'о' || event.key == 'л' || event.key == 'д' || event.key == 'й' || event.key == 'ж' || event.key == 'э' || event.key == 'я' || event.key == 'й' || event.key == 'ч' || event.key == 'с' || event.key == 'м' || event.key == 'й' || event.key == 'и' || event.key == 'т' || event.key == 'ь' || event.key == 'й' || event.key == 'б' || event.key == 'ю' || event.key == 'q' || event.key == 'й' || event.key == 'w' || event.key == 'e' || event.key == 'r' || event.key == 'й' || event.key == 't' || event.key == 'y' || event.key == 'u' || event.key == 'й' || event.key == 'i' || event.key == 'o' || event.key == 'p' || event.key == 'a' || event.key == 's' || event.key == 'd' || event.key == 'f' || event.key == 'g' || event.key == 'h' || event.key == 'j' || event.key == 'k' || event.key == 'l' || event.key == 'z' || event.key == 'x' || event.key == 'c' || event.key == 'v' || event.key == 'b' || event.key == 'n' || event.key == 'm') {
+        isDigit = true;
+    }
+    if (isDigit == false && isDash == false && isControl == false){
+        event.preventDefault();
+    }
+
+};
+
+ }
+ validationFormInput();
 /*function validateField(field){
     if(!field.checkValidity()){
         field.form.nextElementSibling.textContent = field.validationMessage;
