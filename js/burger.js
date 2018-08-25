@@ -166,7 +166,7 @@ xhr.responseType = "json";
 xhr.open("POST","https://webdev-api.loftschool.com/sendmail");
 xhr.send(JSON.stringify(data));
 xhr.addEventListener("load", function(){
-if(xhr.response.response.status <= 400){
+if(xhr.response.status <= 400){
     sendButton.addEventListener("click", function(evt){
         evt.preventDefault();
         orderPopup.classList.add("order__popup--open");
@@ -426,8 +426,12 @@ function init(){
         behaviors: ['drag']
     }); 
     
-  
+ /* var placemark =  new ymaps.Placemark([59.9712,30.3140],{
+    hintContent: 'пр. Солидарности,д.21',
+    balloonContent: 'пр. Солидарности,д.21'
+  });*/
     for (var i = 0; i < placemarks.length; i++) {
+        
 		geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude], {
 			hintContent: placemarks[i].hintContent,
 			balloonContent: placemarks[i].balloonContent
@@ -455,4 +459,5 @@ var clusterer = new ymaps.Clusterer({
  map.geoObjects.add(clusterer);
  clusterer.add(geoObjects);
 
+// map.geoObjects.add(placemark);
 }
